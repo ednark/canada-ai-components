@@ -640,5 +640,46 @@ export const inventory = [
 </div>`
       }
     ]
+  },
+  {
+    dir: "footnotes",
+    name: "Footnotes",
+    cls: "wb-fnotes",
+    section: "data-display",
+    requiresJs: "optional",
+    interaction: ["click", "focus"],
+    pii: "displays_only",
+    audit: false,
+    useWhen: ["Citing sources or adding clarifying notes in policy and guidance content", "Verified against the WET-BOEW footnotes pattern"],
+    avoidWhen: ["Short content where a parenthetical suffices"],
+    agentPrompt: "In-body refs are sup.fn-lnk links (id=fnN-rf) targeting the note; each note ends with a fn-rtn link back to its referrer. Keep the return links — they preserve reading position.",
+    preserve: [
+      "aside[role='region'] with aria-labelledby pointing at the 'Footnotes' heading",
+      "ol.footnotes structure with per-note ids (fnN-M)",
+      "fn-lnk / fn-rtn link pairing between body and notes"
+    ],
+    editable: ["Note text", "Referrer anchors"],
+    limitations: ["Bilingual parity: footnote labels (Note N / Retour à la référence N) must switch with page language"],
+    invariants: ["Referrer/return link pairing is bidirectional", "Notes remain real list items"],
+    related: ["table", "date-modified"],
+    tags: ["footnotes", "citations", "references", "wet-boew"],
+    description: "Footnote references and notes section (WET-BOEW footnotes pattern).",
+    provenance: { observed: "2026-09-06", source: "https://wet-boew.github.io/wet-boew/demos/footnotes/footnotes-en.html (via web.archive.org — canada.ca direct fetches timed out)", method: "live-site observation" },
+    variants: [
+      {
+        file: "default", variant: "default",
+        desc: "In-body footnote referrer and the notes section.",
+        markup: `<p class="example-body">Employment insurance rates are set annually.<sup class="fn-lnk" id="fn1-rf"><a class="fn-lnk" href="#fn1">1</a></sup> Rates vary by region.</p>
+
+<aside class="wb-fnotes" role="region" aria-labelledby="fn-note">
+  <h2 id="fn-note">Footnotes</h2>
+  <ol class="footnotes">
+    <li id="fn1">
+      <p> EI premium rates are published each January. <a class="fn-rtn" href="#fn1-rf">Return to footnote 1 referrer</a></p>
+    </li>
+  </ol>
+</aside>`
+      }
+    ]
   }
 ];

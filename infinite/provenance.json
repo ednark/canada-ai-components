@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "registry": "canada-ai-components",
+  "note": "Session log of field research. Per-tile provenance lives in each tile's provenance block.",
+  "sessions": [
+    {
+      "date": "2026-09-06",
+      "source": "https://www.canada.ca/en/services/jobs.html (via web.archive.org — direct fetches timed out)",
+      "title": "Canada.ca services page (live-site observation, archived capture)",
+      "method": "live-site observation",
+      "findings": [
+        "GCWeb classes confirmed live: wb-slc (skip links), wb-inv, gc-srvinfo, wtrmrk (wordmark), btn btn-primary, wb-srch-q form-control (search), stretched-link doormat cards",
+        "\"Most requested\" top-task link blocks are content patterns (no official component) — recipe candidate, deferred",
+        "Promo/doormat cards (stretched-link) are customizations of Bootstrap-style cards — not tiled"
+      ],
+      "tilesAdded": []
+    },
+    {
+      "date": "2026-09-06",
+      "source": "https://wet-boew.github.io/wet-boew/demos/footnotes/footnotes-en.html (via web.archive.org)",
+      "title": "WET-BOEW footnotes demo (live-site observation, archived capture)",
+      "method": "live-site observation",
+      "findings": [
+        "Footnote referrer/return pattern verified: fn-lnk, fn-rtn, fnN-rf ids",
+        "Added as footnotes/default tile with bilingual note-label guidance"
+      ],
+      "tilesAdded": [
+        "footnotes/default"
+      ]
+    }
+  ]
+}

@@ -147,7 +147,16 @@ function costDefaults(bytes, requiresJs) {
 
 // ─── Recipe membership ───────────────────────────────────────────────────────
 
-const recipeMembership = {};
+const recipeMembership = {,
+  'footnotes': `.wb-fnotes{border-top:1px solid #ccc;padding-top:1rem;margin-top:2rem;max-width:40rem}
+.wb-fnotes h2{font-size:1.125rem;margin:0 0 .5rem}
+.footnotes{list-style:decimal;margin:0;padding-left:1.5rem}
+.footnotes p{margin:.25rem 0;font-size:.875rem}
+.fn-lnk a,.fn-lnk{color:#284162;text-decoration:underline;font-size:.75rem;vertical-align:super}
+.fn-rtn{color:#284162;font-size:.75rem;text-decoration:underline}
+.example-body{max-width:40rem}
+`
+};
 try {
   const recipesDir = join(TILE_DIR, 'recipes');
   for (const item of readdirSync(recipesDir)) {
@@ -232,6 +241,7 @@ function buildMeta(component, variant, relPath, html) {
       portableInvariants: component.invariants,
     },
     supportedTokenProfiles: ['highContrast'],
+    ...(component.provenance && { provenance: component.provenance }),
     file: relPath,
     title: `${component.name} (${variant})`,
   };

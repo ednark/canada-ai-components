@@ -12,6 +12,17 @@
       "addedFacets": ["canadaComponentType", "section", "variant", "requiresJs", "interaction", "a11y", "govCompliance", "costTier", "compositionRecipes", "languages", "piiHandling", "touchTargetSize", "supportedTokenProfiles"],
       "migrationPath": "Initial release.",
       "notes": "17 Canada.ca component families; 5 recipes incl. the mandatory bilingual content-page pattern; languages facet (en/fr) is the registry's distinctive contribution — Official Languages Act parity documented per tile"
+    },
+    {
+      "version": "0.2.0",
+      "releaseDate": "2026-09-06",
+      "componentCount": 25,
+      "breakingChanges": [],
+      "addedCategories": ["provenance"],
+      "addedFacets": [],
+      "metadataChanges": ["provenance block on field-observed tiles"],
+      "migrationPath": "Fully additive.",
+      "notes": "Field-research pass (canada.ca via archived capture): footnotes family verified against WET-BOEW footnotes demo; provenance.json session log added"
     }
   ],
   "designSystemVersions": [

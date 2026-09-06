@@ -3,7 +3,7 @@
   "description": "Canada.ca Design System registry for AI coding agents. Self-contained, accessible Government of Canada components with bilingual (EN/FR) metadata and full adaptation/coordination support.",
   "repo": "https://github.com/ednark/canada-ai-components",
   "base": "https://raw.githubusercontent.com/ednark/canada-ai-components/main",
-  "count": 24,
+  "count": 25,
   "facetsUrl": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/facets.json",
   "index": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/components.index.json",
   "indexSchemaVersion": 1,
