@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System table demonstrating the striped variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Table (striped)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "table",
+    "canadaClass": "table",
+    "section": "data-display",
+    "variant": "striped",
+    "requiresJs": "no",
+    "interaction": [],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": false,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "table",
+      "data",
+      "numbers"
+    ],
+    "description": "Data table with caption and striped variant (table).",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "n/a",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Tabular data with a genuine row/column relationship",
+      "Striped variant for easier row scanning"
+    ],
+    "avoidWhen": [
+      "Lists that could be markup lists",
+      "Layout purposes"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Edit headers and cells. Caption is mandatory. Add table-striped for row shading and table-hover for interactive scanning. Wrap wide tables in a responsive container.",
+    "relatedComponents": [
+      "pagination",
+      "search"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 137,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    },
+    "compositionRecipes": [
+      "search-results"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      "<caption> element (mandatory)",
+      "scope='col'/'row' on header cells",
+      "thead/tbody structure"
+    ],
+    "editable": [
+      "Caption text",
+      "Headers and cells",
+      "Striped/hover modifiers"
+    ],
+    "limitations": [
+      "Wide tables need a responsive wrapper for horizontal scrolling"
+    ],
+    "portableInvariants": [
+      "Caption present",
+      "scope attributes on headers"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "table/striped.html",
+  "title": "Table (striped)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.table-responsive{overflow-x:auto;max-width:40rem}
+.table{width:100%;border-collapse:collapse;margin:1rem 0}
+.table caption{font-weight:700;text-align:left;margin-bottom:.5rem}
+.table th{text-align:left;font-weight:700;padding:.5rem .75rem;border-bottom:2px solid #284162}
+.table td{padding:.5rem .75rem;border-bottom:1px solid #ccc}
+.table-striped tbody tr:nth-child(even){background:#f8f8f8}
+
+</style>
+</head>
+<body>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <caption>Processing times by region</caption>
+    <thead>
+      <tr>
+        <th scope="col">Region</th>
+        <th scope="col">Processing time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Atlantic</th>
+        <td>4 weeks</td>
+      </tr>
+      <tr>
+        <th scope="row">Quebec</th>
+        <td>6 weeks</td>
+      </tr>
+      <tr>
+        <th scope="row">Prairies</th>
+        <td>5 weeks</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="cap">table striped</div>
+</body>
+</html>

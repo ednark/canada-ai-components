@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System pagination demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagination (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "pagination",
+    "canadaClass": "pagination",
+    "section": "navigation",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "click",
+      "focus"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "pagination",
+      "pages",
+      "results"
+    ],
+    "description": "Numbered pagination with previous/next controls.",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Paginated result lists",
+      "Sequential content"
+    ],
+    "avoidWhen": [
+      "Question flows — use buttons"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Edit page links. aria-current='page' on the active page. Previous/Next links carry visually-hidden context.",
+    "relatedComponents": [
+      "table",
+      "search"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 92,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    },
+    "compositionRecipes": [
+      "search-results"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      "nav with aria-label='Pagination'",
+      "ul.pagination structure",
+      "aria-current='page' on the active item"
+    ],
+    "editable": [
+      "Page numbers",
+      "hrefs",
+      "Prev/next labels"
+    ],
+    "limitations": [
+      "No dead links — honest page counts only"
+    ],
+    "portableInvariants": [
+      "Pagination landmark labelled"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "pagination/default.html",
+  "title": "Pagination (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.pagination{list-style:none;margin:1rem 0;padding:0;display:flex;gap:.25rem}
+.pagination li a{display:inline-block;padding:.35rem .65rem;color:#284162;text-decoration:underline;border:1px solid transparent;border-radius:4px}
+.pagination .active a{background:#284162;color:#fff;text-decoration:none;font-weight:700}
+
+</style>
+</head>
+<body>
+<nav aria-label="Pagination" role="navigation">
+  <ul class="pagination">
+    <li><a href="#" rel="prev" aria-label="Previous page">« Previous</a></li>
+    <li class="active"><a href="#" aria-current="page">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#" rel="next" aria-label="Next page">Next »</a></li>
+  </ul>
+</nav>
+<div class="cap">pagination default</div>
+</body>
+</html>

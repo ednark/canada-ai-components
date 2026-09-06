@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "registry": "canada-ai-components",
+  "designSystem": { "name": "Canada.ca Design System (GCWeb)", "version": "5.x", "url": "https://design.canada.ca" },
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releaseDate": "2026-09-06",
+      "componentCount": 24,
+      "breakingChanges": [],
+      "addedCategories": ["discovery", "selection", "instruction", "coordination", "constraints", "portability"],
+      "addedFacets": ["canadaComponentType", "section", "variant", "requiresJs", "interaction", "a11y", "govCompliance", "costTier", "compositionRecipes", "languages", "piiHandling", "touchTargetSize", "supportedTokenProfiles"],
+      "migrationPath": "Initial release.",
+      "notes": "17 Canada.ca component families; 5 recipes incl. the mandatory bilingual content-page pattern; languages facet (en/fr) is the registry's distinctive contribution — Official Languages Act parity documented per tile"
+    }
+  ],
+  "designSystemVersions": [
+    { "version": "5.x", "status": "current", "notes": "Tiles target GCWeb/Canada.ca Design System markup" }
+  ]
+}

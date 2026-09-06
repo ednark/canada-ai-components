@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System search box demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search box (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "search",
+    "canadaClass": "gcsearchbox",
+    "section": "forms",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "type",
+      "focus",
+      "click"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "search",
+      "query",
+      "find"
+    ],
+    "description": "Canada.ca search box with hidden label and icon submit.",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Site search in the header band or on landing pages"
+    ],
+    "avoidWhen": [
+      "Filtering within one page"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Set the form action. The visually-hidden label is mandatory. The search button carries the search icon and accessible title.",
+    "relatedComponents": [
+      "table",
+      "pagination",
+      "header"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 109,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    },
+    "compositionRecipes": [
+      "search-results"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      "form with role='search' behaviour",
+      "Visually-hidden label on the input",
+      "Search submit button with accessible title"
+    ],
+    "editable": [
+      "Placeholder text",
+      "Action",
+      "Button title"
+    ],
+    "limitations": [
+      "Keep the hidden label — the input has no visible text label"
+    ],
+    "portableInvariants": [
+      "Input associated with a label",
+      "Submit button inside the form"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "search/default.html",
+  "title": "Search box (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.form-inline{display:flex;gap:.5rem;max-width:30rem}
+.form-inline label{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.form-inline .form-control{flex:1;border-radius:4px 0 0 4px}
+.form-inline .btn{border-radius:0 4px 4px 0}
+
+</style>
+</head>
+<body>
+<form class="form-inline" role="search" action="#" method="get">
+  <div class="form-group">
+    <label for="search-example" class="wb-inv">Search Canada.ca</label>
+    <input class="form-control" id="search-example" name="q" type="search" placeholder="Search Canada.ca" size="30">
+  </div>
+  <button type="submit" class="btn btn-primary" title="Search Canada.ca">Search<span class="glyphicon glyphicon-search"></span></button>
+</form>
+<div class="cap">search default</div>
+</body>
+</html>

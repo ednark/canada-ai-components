@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System date modified demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Date modified (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "date-modified",
+    "canadaClass": "datemod",
+    "section": "navigation",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": false,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "date",
+      "modified",
+      "freshness",
+      "mandatory"
+    ],
+    "description": "Mandatory content freshness indicator (Date modified).",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "n/a",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Every page — mandatory content freshness indicator above the footer"
+    ],
+    "avoidWhen": [
+      "Never omit on Canada.ca pages"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Set the real last-modified date. Label text must switch with page language (Date modified / Date de modification).",
+    "relatedComponents": [
+      "footer"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 32,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    },
+    "compositionRecipes": [
+      "content-page"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      "'Date modified:' label with the real date",
+      "Position above the footer"
+    ],
+    "editable": [
+      "The date value"
+    ],
+    "limitations": [
+      "Use the actual content change date — not the build date"
+    ],
+    "portableInvariants": [
+      "Date-modified indicator present on every page"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "date-modified/default.html",
+  "title": "Date modified (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.datemod{border-top:1px solid #eaebed;padding-top:.75rem;margin-top:2rem}
+.datemod h2{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.datemod p{margin:0;font-size:.875rem}
+
+</style>
+</head>
+<body>
+<section class="datemod">
+  <h2 class="wb-inv">Date modified</h2>
+  <p><strong>Date modified:</strong> 2026-09-06</p>
+</section>
+<div class="cap">date-modified default</div>
+</body>
+</html>

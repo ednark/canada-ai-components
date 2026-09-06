@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System language toggle demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Language toggle (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "language-toggle",
+    "canadaClass": "lang-toggle",
+    "section": "navigation",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "click",
+      "focus"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "language",
+      "bilingual",
+      "toggle",
+      "official-languages"
+    ],
+    "description": "EN/FR language toggle — mandatory on every Canada.ca page.",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Every Canada.ca page — switching between the English and French versions of the current page"
+    ],
+    "avoidWhen": [
+      "Never omit — the Official Languages Act requires bilingual parity"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "The toggle link points at the equivalent page in the other language: 'Français' on English pages, 'English' on French pages. Keep lang and hreflang attributes.",
+    "relatedComponents": [
+      "header",
+      "footer"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 63,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "lang attribute on the page html element",
+      "hreflang on the toggle link",
+      "Link text always names the OTHER language"
+    ],
+    "editable": [
+      "Target URL"
+    ],
+    "limitations": [
+      "Both language versions must exist and be equivalent — a dead toggle fails the Official Languages Act"
+    ],
+    "portableInvariants": [
+      "Toggle present on every page",
+      "Other-language page exists and is equivalent"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "language-toggle/default.html",
+  "title": "Language toggle (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.list-inline{list-style:none;margin:0;padding:.5rem 1rem;display:flex;justify-content:flex-end;gap:1rem}
+.list-inline a{color:#284162}
+
+</style>
+</head>
+<body>
+<ul class="list-inline" id="wb-lng">
+  <li><a href="#" lang="fr" hreflang="fr">Français</a></li>
+</ul>
+<!-- On the French page, the toggle reads:
+<ul class="list-inline" id="wb-lng">
+  <li><a href="#" lang="en" hreflang="en">English</a></li>
+</ul> -->
+<div class="cap">language-toggle default</div>
+</body>
+</html>

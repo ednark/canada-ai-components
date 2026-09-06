@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System details (expandable content) demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Details (expandable content) (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "details",
+    "canadaClass": "details",
+    "section": "feedback",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "click",
+      "keyboard"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "details",
+      "expandable",
+      "disclosure",
+      "content"
+    ],
+    "description": "Native HTML details element styled for Canada.ca.",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Progressive disclosure of secondary content (help text, definitions)"
+    ],
+    "avoidWhen": [
+      "Critical information — keep it visible"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Native <details>/<summary> — no JS needed. Edit summary text and content. The GCWeb styling adds the plus/minus indicator.",
+    "relatedComponents": [
+      "table",
+      "alert"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 43,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "Native <details>/<summary> elements"
+    ],
+    "editable": [
+      "Summary text",
+      "Content HTML"
+    ],
+    "limitations": [
+      "Content hidden by default — never essential information"
+    ],
+    "portableInvariants": [
+      "Native details/summary semantics"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "details/default.html",
+  "title": "Details (expandable content) (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.details summary,summary{cursor:pointer;color:#284162;font-weight:500;padding:.35rem 0}
+details{border:1px solid #eaebed;border-radius:4px;padding:.75rem 1rem;margin:1rem 0;max-width:40rem}
+details[open]{padding-bottom:1.25rem}
+summary:before{content:"+";margin-right:.5rem;font-weight:700}
+details[open] summary:before{content:"−"}
+
+</style>
+</head>
+<body>
+<details>
+  <summary>Need help with your application?</summary>
+  <p>If you have questions about the process, contact the program office at 1-800-O-Canada.</p>
+</details>
+<div class="cap">details default</div>
+</body>
+</html>

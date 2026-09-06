@@ -1,0 +1,28 @@
+{
+  "recipe": "contact-form",
+  "title": "Contact form",
+  "description": "Canada.ca form: labelled fields with required markers, textarea, primary submit. Bilingual parity required.",
+  "aliases": ["collection:contact-form"],
+  "components": [
+    { "order": 1, "component": "text-input", "variant": "default", "file": "text-input/default.html", "role": "input", "required": true, "reason": "Email address with required marker and autocomplete" },
+    { "order": 2, "component": "textarea", "variant": "default", "file": "textarea/default.html", "role": "input", "required": true, "reason": "Message body" },
+    { "order": 3, "component": "button", "variant": "primary", "file": "button/primary.html", "role": "action", "required": true, "reason": "Submit — the only primary button on the page" }
+  ],
+  "nesting": "Components 1-2 are self-contained (form-group wrapper included); component 3 closes the form",
+  "validationOrder": [
+    "Required fields marked with '(required)' in the label",
+    "Errors: has-error on the form-group plus inline error text with role='alert' — Canada.ca has no page-level error summary",
+    "Every label string exists in English and French"
+  ],
+  "a11yNotes": [
+    "Labels associated via for/id",
+    "Inline error text must use role='alert' to be announced",
+    "Bilingual parity: the equivalent French page must exist and be linked"
+  ],
+  "agentPromptSequence": [
+    "1. Build each field as a form-group with label + form-control",
+    "2. Add the primary submit button",
+    "3. Provide both EN and FR label strings for every field",
+    "4. On failure, switch the group to has-error and add inline error text"
+  ]
+}

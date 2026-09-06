@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "source": { "designSystem": "Canada.ca Design System (GCWeb)", "version": "5.x", "registry": "canada-ai-components" },
+  "_scope": "Family-level hints for translating Canada.ca components to the USWDS, GOV.UK, and DSFR registries. Bilingual parity: when translating, produce the target registry's language convention (EN for USWDS/GOV.UK, FR for DSFR) and note that the source tiles are bilingual.",
+  "canada-to-uswds": {
+    "target": { "designSystem": "U.S. Web Design System", "version": "3.13.0", "registry": "https://raw.githubusercontent.com/ednark/uswds-ai-components/main" },
+    "button": { "target_component": "button", "adaptation": "css-only", "classMap": { "btn": "usa-button",
+        "btn-primary": null, "btn-default": "usa-button usa-button--secondary", "btn-link": "usa-button usa-button--secondary" }, "mismatches": ["Canada link-buttons ≈ USWDS secondary"], "notes": "" },
+    "text-input": { "target_component": "text-input", "adaptation": "css-only", "classMap": { "form-control": "usa-input" }, "mismatches": ["Canada inline errors (has-error + role='alert' span) map to USWDS usa-error-message with aria-describedby", "Canada required marker is label text '(required)'; USWDS uses usa-hint + required attribute"], "notes": "" },
+    "select": { "target_component": "select", "adaptation": "css-only", "classMap": { "form-control": "usa-select" }, "mismatches": [], "notes": "" },
+    "alert": { "target_component": "alert", "adaptation": "css-only", "classMap": { "alert": "usa-alert usa-alert--info",
+        "alert-info": null, "alert-success": "usa-alert usa-alert--success", "alert-danger": "usa-alert usa-alert--error", "alert-warning": "usa-alert usa-alert--warning" }, "mismatches": ["Canada danger ≈ USWDS error"], "notes": "" },
+    "table": { "target_component": "table", "adaptation": "css-only", "classMap": { "table": "usa-table" }, "mismatches": [], "notes": "" },
+    "breadcrumb": { "target_component": "breadcrumb", "adaptation": "css-only", "classMap": { "breadcrumb": "usa-breadcrumb" }, "mismatches": [], "notes": "" },
+    "checkbox": { "target_component": "checkbox", "adaptation": "structural", "mismatches": ["gc-chckbxrdio custom check renderer maps to usa-checkbox wrapper"], "notes": "" },
+    "date-modified": { "target_component": "(no equivalent)", "adaptation": "structural", "mismatches": ["USWDS has no date-modified component; approximate with plain text or usa-identifier"], "notes": "Canada.ca mandate — keep the indicator even without a component equivalent" }
+  },
+  "canada-to-govuk": {
+    "target": { "designSystem": "GOV.UK Design System", "version": "5.x", "registry": "https://raw.githubusercontent.com/ednark/govuk-ai-components/main" },
+    "button": { "target_component": "button", "adaptation": "css-only", "classMap": { "btn": "govuk-button",
+        "btn-primary": null, "btn-default": "govuk-button govuk-button--secondary" }, "mismatches": [], "notes": "" },
+    "text-input": { "target_component": "text-input", "adaptation": "css-only", "classMap": { "form-control": "govuk-input" }, "mismatches": ["GOV.UK error-summary pattern has no Canada equivalent — inline errors only", "GOV.UK hint is a sibling div; Canada uses label text markers"], "notes": "" },
+    "alert": { "target_component": "notification-banner", "adaptation": "css-only", "classMap": { "alert-success": "govuk-notification-banner govuk-notification-banner--success", "alert-danger": "govuk-notification-banner" }, "mismatches": ["GOV.UK banner has a header bar; Canada alerts are inline sections", "info/warning have no GOV.UK banner variant"], "notes": "" },
+    "table": { "target_component": "table", "adaptation": "css-only", "classMap": { "table": "govuk-table" }, "mismatches": [], "notes": "" },
+    "breadcrumb": { "target_component": "breadcrumbs", "adaptation": "css-only", "classMap": { "breadcrumb": "govuk-breadcrumbs" }, "mismatches": [], "notes": "" },
+    "details": { "target_component": "details", "adaptation": "css-only", "classMap": { "details": "govuk-details" }, "mismatches": [], "notes": "Both native <details>" }
+  },
+  "canada-to-dsfr": {
+    "target": { "designSystem": "Système de Design de l'État (DSFR)", "version": "1.15", "registry": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main" },
+    "button": { "target_component": "button", "adaptation": "css-only", "classMap": { "btn": "fr-btn",
+        "btn-primary": null, "btn-default": "fr-btn fr-btn--secondary" }, "mismatches": [], "notes": "Bilingual parity maps naturally to DSFR's French-first content" },
+    "text-input": { "target_component": "input", "adaptation": "css-only", "classMap": { "form-control": "fr-input" }, "mismatches": ["DSFR error text is fr-error-text sibling; Canada uses has-error + alert-role span"], "notes": "Both per-field errors, no global summary — closest error-handling pair" },
+    "alert": { "target_component": "alert", "adaptation": "css-only", "classMap": { "alert": "fr-alert fr-alert--info",
+        "alert-info": null, "alert-success": "fr-alert fr-alert--success", "alert-danger": "fr-alert fr-alert--error", "alert-warning": "fr-alert fr-alert--warning" }, "mismatches": [], "notes": "Closest 1:1 pair across the registries" },
+    "table": { "target_component": "table", "adaptation": "css-only", "classMap": { "table": "fr-table" }, "mismatches": [], "notes": "" },
+    "language-toggle": { "target_component": "header (language selector)", "adaptation": "structural", "mismatches": ["DSFR carries the language selector inside fr-header; Canada places the toggle in the header banner"], "notes": "Both jurisdictions mandate bilingual parity — keep the toggle" },
+    "date-modified": { "target_component": "(no equivalent)", "adaptation": "structural", "mismatches": ["No DSFR equivalent; keep as plain text"], "notes": "Canada.ca mandate" }
+  }
+}

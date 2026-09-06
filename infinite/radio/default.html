@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System radio demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radio (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "radio",
+    "canadaClass": "radio",
+    "section": "forms",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "focus",
+      "click",
+      "keyboard"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "radio",
+      "single-choice",
+      "form"
+    ],
+    "description": "Radio group for single-choice questions.",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Exactly one choice from a small set",
+      "Yes/no questions"
+    ],
+    "avoidWhen": [
+      "Multiple selections — use checkbox"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Edit option labels. All radios share one name attribute. Errors: has-error on the group + error text span with role='alert'.",
+    "relatedComponents": [
+      "checkbox",
+      "button"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 93,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      ".radio wrapper per option with label wrapping the input",
+      "Same name attribute on all radios"
+    ],
+    "editable": [
+      "Option labels",
+      "Values"
+    ],
+    "limitations": [
+      "Keep option lists short"
+    ],
+    "portableInvariants": [
+      "Real <input type='radio'> elements sharing one name"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "radio/default.html",
+  "title": "Radio (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.legend-brdr-bttm{border:0;padding:0;margin:0 0 1rem;border-bottom:1px solid #ccc}
+.radio{margin-bottom:.5rem}
+.radio label{display:inline-block;padding-left:1.5rem;position:relative;cursor:pointer}
+.radio input[type=radio]{position:absolute;opacity:0;left:0;top:4px;width:18px;height:18px;margin:0}
+.radio label:before{content:"";position:absolute;left:0;top:2px;width:17px;height:17px;border:2px solid #284162;border-radius:50%;background:#fff}
+.radio input[type=radio]:checked+label:after{content:"";position:absolute;left:5px;top:7px;width:9px;height:9px;border-radius:50%;background:#284162}
+.radio input[type=radio]:focus+label:before{outline:2px solid #0535d2;outline-offset:2px}
+
+</style>
+</head>
+<body>
+<fieldset class="legend-brdr-bttm">
+  <legend class="h5">Preferred contact method</legend>
+  <div class="radio">
+    <label for="rd-email"><input type="radio" id="rd-email" name="contact" value="email"> Email</label>
+  </div>
+  <div class="radio">
+    <label for="rd-phone"><input type="radio" id="rd-phone" name="contact" value="phone"> Phone</label>
+  </div>
+</fieldset>
+<div class="cap">radio default</div>
+</body>
+</html>

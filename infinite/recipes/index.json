@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "hand-authored (tools/build-registry.mjs consumes this)",
+  "spec": "Surface 4: Component Recipes (ai-component-registry-spec/protocol.md)",
+  "count": 5,
+  "urlPattern": "infinite/recipes/{recipe}.json",
+  "recipes": [
+    { "name": "contact-form", "title": "Contact form", "description": "Bilingual-labelled form fields with inline errors and submit", "componentCount": 3, "url": "infinite/recipes/contact-form.json" },
+    { "name": "confirmation-page", "title": "Confirmation page", "description": "Success alert plus next action", "componentCount": 2, "url": "infinite/recipes/confirmation-page.json" },
+    { "name": "search-results", "title": "Search results", "description": "Search box, results table, pagination", "componentCount": 3, "url": "infinite/recipes/search-results.json" },
+    { "name": "content-page", "title": "Canada.ca content page", "description": "Full chrome: header with language toggle, breadcrumb, footer, date modified", "componentCount": 4, "url": "infinite/recipes/content-page.json" },
+    { "name": "validation-errors", "title": "Validation error state", "description": "Danger alert plus inline field errors — no global summary exists in Canada.ca", "componentCount": 3, "url": "infinite/recipes/validation-errors.json" }
+  ]
+}

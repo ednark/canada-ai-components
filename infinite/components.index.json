@@ -1,0 +1,1324 @@
+{
+  "schemaVersion": 1,
+  "metadataSchemaVersion": 2,
+  "generatedBy": "_base/generate-index.mjs",
+  "counts": {
+    "total": 24,
+    "bySection": {
+      "feedback": 5,
+      "navigation": 7,
+      "forms": 10,
+      "data-display": 2
+    }
+  },
+  "components": [
+    {
+      "file": "alert/danger.html",
+      "title": "Alert (danger)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "alert",
+      "canadaClass": "alert",
+      "section": "feedback",
+      "variant": "danger",
+      "requiresJs": "no",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "info",
+        "success",
+        "danger",
+        "warning"
+      ],
+      "description": "Info, success, danger, and warning alerts (alert).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "text-input",
+        "table"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "validation-errors"
+      ]
+    },
+    {
+      "file": "alert/info.html",
+      "title": "Alert (info)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "alert",
+      "canadaClass": "alert",
+      "section": "feedback",
+      "variant": "info",
+      "requiresJs": "no",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "info",
+        "success",
+        "danger",
+        "warning"
+      ],
+      "description": "Info, success, danger, and warning alerts (alert).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "text-input",
+        "table"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "validation-errors"
+      ]
+    },
+    {
+      "file": "alert/success.html",
+      "title": "Alert (success)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "alert",
+      "canadaClass": "alert",
+      "section": "feedback",
+      "variant": "success",
+      "requiresJs": "no",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "info",
+        "success",
+        "danger",
+        "warning"
+      ],
+      "description": "Info, success, danger, and warning alerts (alert).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "text-input",
+        "table"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "validation-errors"
+      ]
+    },
+    {
+      "file": "alert/warning.html",
+      "title": "Alert (warning)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "alert",
+      "canadaClass": "alert",
+      "section": "feedback",
+      "variant": "warning",
+      "requiresJs": "no",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "info",
+        "success",
+        "danger",
+        "warning"
+      ],
+      "description": "Info, success, danger, and warning alerts (alert).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "text-input",
+        "table"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "validation-errors"
+      ]
+    },
+    {
+      "file": "back-link/default.html",
+      "title": "Back link (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "back-link",
+      "canadaClass": "btn btn-link",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "back",
+        "navigation",
+        "transaction"
+      ],
+      "description": "Back navigation link for transactional flows.",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "breadcrumb",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "breadcrumb/default.html",
+      "title": "Breadcrumb trail (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "breadcrumb",
+      "canadaClass": "breadcrumb",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "breadcrumb",
+        "navigation",
+        "hierarchy"
+      ],
+      "description": "Canada.ca breadcrumb trail for hierarchy context.",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "header",
+        "footer",
+        "back-link"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "content-page"
+      ]
+    },
+    {
+      "file": "button/default.html",
+      "title": "Button (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "button",
+      "canadaClass": "btn",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "button",
+        "submit",
+        "action",
+        "cta"
+      ],
+      "description": "Primary, default, and link-styled buttons (btn).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "text-input",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "contact-form",
+        "validation-errors"
+      ]
+    },
+    {
+      "file": "button/disabled.html",
+      "title": "Button (disabled)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "button",
+      "canadaClass": "btn",
+      "section": "forms",
+      "variant": "disabled",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "button",
+        "submit",
+        "action",
+        "cta"
+      ],
+      "description": "Primary, default, and link-styled buttons (btn).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "text-input",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "contact-form",
+        "validation-errors"
+      ]
+    },
+    {
+      "file": "button/link.html",
+      "title": "Button (link)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "button",
+      "canadaClass": "btn",
+      "section": "forms",
+      "variant": "link",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "button",
+        "submit",
+        "action",
+        "cta"
+      ],
+      "description": "Primary, default, and link-styled buttons (btn).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "text-input",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "contact-form",
+        "validation-errors"
+      ]
+    },
+    {
+      "file": "button/primary.html",
+      "title": "Button (primary)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "button",
+      "canadaClass": "btn",
+      "section": "forms",
+      "variant": "primary",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "button",
+        "submit",
+        "action",
+        "cta"
+      ],
+      "description": "Primary, default, and link-styled buttons (btn).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "text-input",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "contact-form",
+        "validation-errors"
+      ]
+    },
+    {
+      "file": "checkbox/default.html",
+      "title": "Checkbox (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "checkbox",
+      "canadaClass": "gc-chckbxrdio",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "checkbox",
+        "multiple",
+        "form",
+        "options"
+      ],
+      "description": "Checkbox with GCWeb custom check renderer (gc-chckbxrdio).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "radio",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "date-modified/default.html",
+      "title": "Date modified (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "date-modified",
+      "canadaClass": "datemod",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": false,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "date",
+        "modified",
+        "freshness",
+        "mandatory"
+      ],
+      "description": "Mandatory content freshness indicator (Date modified).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "n/a",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "footer"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "content-page"
+      ]
+    },
+    {
+      "file": "details/default.html",
+      "title": "Details (expandable content) (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "details",
+      "canadaClass": "details",
+      "section": "feedback",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "details",
+        "expandable",
+        "disclosure",
+        "content"
+      ],
+      "description": "Native HTML details element styled for Canada.ca.",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "table",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "footer/default.html",
+      "title": "GC footer (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "footer",
+      "canadaClass": "footer",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "footer",
+        "wordmark",
+        "about",
+        "legal"
+      ],
+      "description": "GC footer with About government links and Canada wordmark.",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "header",
+        "date-modified"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "content-page"
+      ]
+    },
+    {
+      "file": "header/default.html",
+      "title": "GC header (signature + language toggle) (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "header",
+      "canadaClass": "header",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "optional",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "header",
+        "signature",
+        "wordmark",
+        "language",
+        "toggle",
+        "identity"
+      ],
+      "description": "GC header with Canada signature, language toggle, and search.",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "language-toggle",
+        "footer",
+        "search"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "compositionRecipes": [
+        "content-page"
+      ]
+    },
+    {
+      "file": "language-toggle/default.html",
+      "title": "Language toggle (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "language-toggle",
+      "canadaClass": "lang-toggle",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "language",
+        "bilingual",
+        "toggle",
+        "official-languages"
+      ],
+      "description": "EN/FR language toggle — mandatory on every Canada.ca page.",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "header",
+        "footer"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "pagination/default.html",
+      "title": "Pagination (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "pagination",
+      "canadaClass": "pagination",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "pagination",
+        "pages",
+        "results"
+      ],
+      "description": "Numbered pagination with previous/next controls.",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "table",
+        "search"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "search-results"
+      ]
+    },
+    {
+      "file": "radio/default.html",
+      "title": "Radio (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "radio",
+      "canadaClass": "radio",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "radio",
+        "single-choice",
+        "form"
+      ],
+      "description": "Radio group for single-choice questions.",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "checkbox",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "search/default.html",
+      "title": "Search box (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "search",
+      "canadaClass": "gcsearchbox",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "focus",
+        "click"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "search",
+        "query",
+        "find"
+      ],
+      "description": "Canada.ca search box with hidden label and icon submit.",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "table",
+        "pagination",
+        "header"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "search-results"
+      ]
+    },
+    {
+      "file": "select/default.html",
+      "title": "Select (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "select",
+      "canadaClass": "form-control",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "change"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "select",
+        "dropdown",
+        "form"
+      ],
+      "description": "Dropdown select with form group (form-control).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "radio",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "table/default.html",
+      "title": "Table (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "table",
+      "canadaClass": "table",
+      "section": "data-display",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": false,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "table",
+        "data",
+        "numbers"
+      ],
+      "description": "Data table with caption and striped variant (table).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "n/a",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "pagination",
+        "search"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "search-results"
+      ]
+    },
+    {
+      "file": "table/striped.html",
+      "title": "Table (striped)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "table",
+      "canadaClass": "table",
+      "section": "data-display",
+      "variant": "striped",
+      "requiresJs": "no",
+      "interaction": [],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": false,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "table",
+        "data",
+        "numbers"
+      ],
+      "description": "Data table with caption and striped variant (table).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "n/a",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "pagination",
+        "search"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "search-results"
+      ]
+    },
+    {
+      "file": "text-input/default.html",
+      "title": "Text input (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "text-input",
+      "canadaClass": "form-control",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "input",
+        "text",
+        "form",
+        "field"
+      ],
+      "description": "Text input with form group, required marker, and inline errors (form-control).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "button",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "contact-form",
+        "validation-errors"
+      ]
+    },
+    {
+      "file": "textarea/default.html",
+      "title": "Textarea (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "textarea",
+      "canadaClass": "form-control",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "textarea",
+        "multiline",
+        "form"
+      ],
+      "description": "Multi-line text input (form-control).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "text-input",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "contact-form"
+      ]
+    }
+  ]
+}

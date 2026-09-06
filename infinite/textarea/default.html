@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System textarea demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Textarea (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "textarea",
+    "canadaClass": "form-control",
+    "section": "forms",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "type",
+      "focus"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "textarea",
+      "multiline",
+      "form"
+    ],
+    "description": "Multi-line text input (form-control).",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Longer free-text answers (description, message)"
+    ],
+    "avoidWhen": [
+      "Single-line values — use text-input"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Adjust the rows attribute. Error state: has-error on the form-group plus error text span with role='alert'.",
+    "relatedComponents": [
+      "text-input",
+      "button"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 41,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    },
+    "compositionRecipes": [
+      "contact-form"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      ".form-control class on the textarea",
+      ".form-group wrapper",
+      "Label 'for' association"
+    ],
+    "editable": [
+      "Label text",
+      "rows attribute"
+    ],
+    "limitations": [
+      "Fixed height by rows"
+    ],
+    "portableInvariants": [
+      "Semantic <textarea> element",
+      "Label association via for/id"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "textarea/default.html",
+  "title": "Textarea (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.form-group{margin-bottom:1.25rem;max-width:30rem}
+.form-control{font:inherit;display:block;width:100%;box-sizing:border-box;padding:.5rem .6rem;border:1px solid #6f6f6f;border-radius:4px;color:#333;background:#fff}
+.form-control:focus{outline:2px solid #0535d2}
+textarea.form-control{min-height:8rem}
+
+</style>
+</head>
+<body>
+<div class="form-group">
+  <label for="ta-example">Your message</label>
+  <textarea id="ta-example" name="message" rows="5" class="form-control"></textarea>
+</div>
+<div class="cap">textarea default</div>
+</body>
+</html>

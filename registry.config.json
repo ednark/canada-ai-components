@@ -1,0 +1,72 @@
+{
+  "name": "canada-ai-components",
+  "description": "Canada.ca Design System registry for AI coding agents. Self-contained, accessible Government of Canada components with bilingual (EN/FR) metadata and full adaptation/coordination support.",
+  "repo": "https://github.com/ednark/canada-ai-components",
+  "base": "https://raw.githubusercontent.com/ednark/canada-ai-components/main",
+  "count": 26,
+  "facetsUrl": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/facets.json",
+  "index": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/components.index.json",
+  "indexSchemaVersion": 1,
+  "metadataSchemaVersion": 2,
+  "tileFetchPattern": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/{file}",
+  "designSystem": {
+    "name": "Canada.ca Design System (GCWeb)",
+    "version": "5.x",
+    "url": "https://design.canada.ca"
+  },
+  "agentMetaId": "canada-agent-meta",
+  "tileDir": "infinite",
+  "facets": [
+    "canadaComponentType",
+    "section",
+    "variant",
+    "requiresJs",
+    "interaction",
+    "a11y",
+    "govCompliance",
+    "costTier",
+    "compositionRecipes",
+    "languages",
+    "piiHandling",
+    "touchTargetSize",
+    "supportedTokenProfiles"
+  ],
+  "metadataCategories": {
+    "discovery": "Facets for filtering in code (not sent to model)",
+    "selection": "useWhen/avoidWhen — helps choose the right component",
+    "instruction": "agentPrompt — direct guidance for adaptation",
+    "coordination": "incompatibleWith/compositionCost/agentPromptSequence — plan before composing",
+    "constraints": "preserve/editable/limitations/portableInvariants — hard boundaries on changes",
+    "portability": "classMapping for cross-registry class substitution"
+  },
+  "constraintPriority": [
+    "constraints.preserve (never modify)",
+    "constraints.limitations (respect)",
+    "instruction.agentPrompt (adapt within boundaries)",
+    "constraints.editable (prefer)"
+  ],
+  "mcp": {
+    "enabled": true,
+    "server": "_base/mcp/server.mjs",
+    "transport": "stdio",
+    "tools": [
+      "search_components",
+      "get_component",
+      "list_facets",
+      "get_index",
+      "get_adapter",
+      "translate_component",
+      "get_recipe",
+      "query_compliance",
+      "get_versions"
+    ]
+  },
+  "tokenProfiles": {
+    "highContrast": {
+      "description": "forced-colors / high-contrast mode support",
+      "tokenOverrides": { "border": "2px solid currentColor", "background": "transparent" }
+    }
+  },
+  "compatibilityPath": "compatibility.json",
+  "updated": "0.1.0"
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System back link demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Back link (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "back-link",
+    "canadaClass": "btn btn-link",
+    "section": "navigation",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "click",
+      "focus"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "back",
+      "navigation",
+      "transaction"
+    ],
+    "description": "Back navigation link for transactional flows.",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Returning to the previous question in a transaction flow"
+    ],
+    "avoidWhen": [
+      "Hierarchical navigation — use breadcrumbs"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Set href to the previous step's URL. Keep the back-arrow glyph via CSS content, not an inline image.",
+    "relatedComponents": [
+      "breadcrumb",
+      "button"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 28,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "Link semantics with meaningful accessible name"
+    ],
+    "editable": [
+      "href",
+      "Visible text"
+    ],
+    "limitations": [
+      "Never replace browser back behaviour guarantees"
+    ],
+    "portableInvariants": [
+      "Semantic <a> with meaningful name"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "back-link/default.html",
+  "title": "Back link (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.btn-link:before{content:"‹";margin-right:.35rem;font-size:1.1em}
+
+</style>
+</head>
+<body>
+<a class="btn btn-link" href="/previous-step">
+  <span aria-hidden="true">‹</span> Back to previous step
+</a>
+<div class="cap">back-link default</div>
+</body>
+</html>

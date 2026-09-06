@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System text input demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Text input (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "text-input",
+    "canadaClass": "form-control",
+    "section": "forms",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "type",
+      "focus"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "input",
+      "text",
+      "form",
+      "field"
+    ],
+    "description": "Text input with form group, required marker, and inline errors (form-control).",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "dataMaskingCompatible": true
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Short free-text answers (name, email, file number)"
+    ],
+    "avoidWhen": [
+      "Longer answers — use textarea",
+      "Dates — Canada.ca uses separate day/month/year text inputs without a calendar"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Edit the label. Required fields carry a '(required)' suffix in the label. Error state: has-error on the form-group plus an error text span with role='alert'; Canada.ca has no global error summary — keep errors inline.",
+    "relatedComponents": [
+      "button",
+      "alert"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 59,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    },
+    "compositionRecipes": [
+      "contact-form",
+      "validation-errors"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      ".form-control class on the input",
+      ".form-group wrapper with label",
+      "Label 'for' association",
+      "required marker in the label text"
+    ],
+    "editable": [
+      "Label text",
+      "type attribute (text, email, tel)",
+      "Input width styling"
+    ],
+    "limitations": [
+      "No calendar component exists in the design system — never add one for date entry",
+      "Inline errors only — no page-level error summary pattern"
+    ],
+    "portableInvariants": [
+      "Semantic <input> element",
+      "Label association via for/id"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "text-input/default.html",
+  "title": "Text input (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.form-group{margin-bottom:1.25rem;max-width:30rem}
+.form-control{font:inherit;display:block;width:100%;box-sizing:border-box;padding:.5rem .6rem;border:1px solid #6f6f6f;border-radius:4px;color:#333;background:#fff;height:2.4rem}
+.form-control:focus{outline:2px solid #0535d2;outline-offset:2px}
+label.required:after{content:"*";color:#a91e1e;margin-left:.25rem}
+.has-error .form-control{border-color:#a91e1e;border-width:2px}
+.error,.error-message{color:#a91e1e;font-weight:700}
+
+</style>
+</head>
+<body>
+<div class="form-group">
+  <label for="ti-example" class="required">Email address <strong class="required">(required)</strong></label>
+  <input type="text" id="ti-example" name="email" class="form-control" autocomplete="email">
+</div>
+<div class="cap">text-input default</div>
+</body>
+</html>

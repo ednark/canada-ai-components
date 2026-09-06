@@ -1,0 +1,25 @@
+{
+  "recipe": "confirmation-page",
+  "title": "Confirmation page",
+  "description": "Success alert with the outcome and a next-step action.",
+  "aliases": ["collection:confirmation-page"],
+  "components": [
+    { "order": 1, "component": "alert", "variant": "success", "file": "alert/success.html", "role": "feedback", "required": true, "reason": "role='status' success alert carrying the outcome" },
+    { "order": 2, "component": "button", "variant": "default", "file": "button/default.html", "role": "action", "required": false, "reason": "Next-step action (return to start, view request)" }
+  ],
+  "nesting": "Alert 1 at the top of main; button 2 below it",
+  "validationOrder": [
+    "One h1 per page stating the outcome",
+    "Reference numbers remain copyable text",
+    "Both language versions of this page exist"
+  ],
+  "a11yNotes": [
+    "role='status' announces the confirmation politely",
+    "Alert h2 states the result"
+  ],
+  "agentPromptSequence": [
+    "1. Place the success alert at the top of main",
+    "2. Add the next-step button",
+    "3. Link the language toggle to the French equivalent"
+  ]
+}

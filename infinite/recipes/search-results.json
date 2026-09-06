@@ -1,0 +1,26 @@
+{
+  "recipe": "search-results",
+  "title": "Search results",
+  "description": "Search box, results table, pagination.",
+  "aliases": ["collection:search-results"],
+  "components": [
+    { "order": 1, "component": "search", "variant": "default", "file": "search/default.html", "role": "input", "required": true, "reason": "Query; form action points at the search endpoint" },
+    { "order": 2, "component": "table", "variant": "default", "file": "table/default.html", "role": "data-display", "required": true, "reason": "Results; caption mandatory" },
+    { "order": 3, "component": "pagination", "variant": "default", "file": "pagination/default.html", "role": "navigation", "required": true, "reason": "Result-page navigation" }
+  ],
+  "nesting": "DOM order 1 → 2 → 3; wrap the table in a responsive container",
+  "validationOrder": [
+    "Table caption filled",
+    "scope='col' on headers",
+    "aria-current='page' on the active pagination item"
+  ],
+  "a11yNotes": [
+    "Search input keeps its visually-hidden label",
+    "Total result count stated in text"
+  ],
+  "agentPromptSequence": [
+    "1. Place the search box with its action",
+    "2. Render the results table with caption",
+    "3. Add pagination below the table"
+  ]
+}

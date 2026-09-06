@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System gc footer demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GC footer (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "footer",
+    "canadaClass": "footer",
+    "section": "navigation",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "click",
+      "focus"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "footer",
+      "wordmark",
+      "about",
+      "legal"
+    ],
+    "description": "GC footer with About government links and Canada wordmark.",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Every page — About government links, Canada wordmark"
+    ],
+    "avoidWhen": [
+      "Do not place primary navigation here"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Keep the standard link set (About government, Contact us, News, Treaties, laws and regulations, Government-wide reporting, Prime Minister, Departments and agencies). The Canada wordmark closes the page.",
+    "relatedComponents": [
+      "header",
+      "date-modified"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 136,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    },
+    "compositionRecipes": [
+      "content-page"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      "Standard 'About government' link set",
+      "Canada wordmark at page close"
+    ],
+    "editable": [
+      "Additional links",
+      "Link URLs"
+    ],
+    "limitations": [
+      "The wordmark is a protected identity asset"
+    ],
+    "portableInvariants": [
+      "Contentinfo landmark",
+      "Wordmark present"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "footer/default.html",
+  "title": "GC footer (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.footer{background:#f8f8f8;border-top:1px solid #eaebed;margin:3rem -2rem -2rem;padding:1.5rem}
+.footer .brand{padding:.5rem 0;display:block}
+.flag:after{content:"Canada";font-weight:700;color:#161616;font-size:1.1rem}
+.footer nav ul{list-style:none;margin:0 0 1rem;padding:0;display:flex;flex-wrap:wrap;gap:1rem}
+.footer nav a{color:#284162}
+
+</style>
+</head>
+<body>
+<footer id="wb-info" class="footer">
+  <h2 class="wb-inv">About this site</h2>
+  <p class="brand">
+    <span class="wb-inv">Symbol of the Government of Canada</span>
+    <span class="flag"></span>
+  </p>
+  <nav aria-label="About this site">
+    <ul class="list-inline">
+      <li><a href="#">About government</a></li>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Treaties, laws and regulations</a></li>
+      <li><a href="#">Departments and agencies</a></li>
+    </ul>
+  </nav>
+</footer>
+<div class="cap">footer default</div>
+</body>
+</html>

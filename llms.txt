@@ -1,0 +1,65 @@
+> Canada.ca AI Components — Plain-text agent protocol
+> Free to browse and download. Component markup and metadata are original works; GCWeb class names used under the Canada.ca Design System's terms.
+> Home: https://github.com/ednark/canada-ai-components
+> Base layer: https://github.com/ednark/ai-component-registry-spec (submodule at _base/)
+
+---
+
+## Overview
+
+Canada.ca Design System registry for AI coding agents building Government of Canada services. 24 self-contained component tiles across 17 component families with categorized adaptation, coordination, and compliance metadata (Standard on Web Accessibility, WCAG 2.1 AA). Bilingual mandate: every tile carries languages ["en","fr"] — EN/FR parity is required by the Official Languages Act.
+
+## Machine manifest
+
+> https://raw.githubusercontent.com/ednark/canada-ai-components/main/agents.json
+
+---
+
+## Quick start
+
+1. Filter vocab: GET https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/facets.json
+2. Discovery index (lean): GET https://raw.githubusercontent.com/canada-ai-components/main/infinite/components.index.json
+   (canonical: https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/components.index.json)
+3. Component source: GET https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/{file}
+4. Recipes: GET https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/recipes/index.json
+   (contact-form, confirmation-page, search-results, content-page, validation-errors)
+5. Version history: GET https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/versions.json
+
+---
+
+## Facets
+
+- canadaComponentType — button, text-input, checkbox, alert, table, header, language-toggle, date-modified, etc.
+- section — forms, navigation, feedback, data-display
+- variant — component variant
+- requiresJs — no, optional, required
+- interaction — passive, click, focus, keyboard, type, change
+- govCompliance — Standard on Web Accessibility, WCAG 2.1 AA
+- a11y — wcag21AA, keyboardNav, screenReader, reducedMotion, forcedColors, ariaAttributes
+- costTier — cheap, moderate, expensive
+- compositionRecipes — recipes this component participates in
+- languages — en, fr (bilingual parity mandate)
+- piiHandling — accepts_input, displays_only, none
+- touchTargetSize — 44px on interactive components
+- supportedTokenProfiles — highContrast
+
+---
+
+## Canada.ca rules
+
+- Bilingual parity is law: produce EN and FR strings; the language toggle targets the equivalent page
+- No global error summary — inline errors per field: has-error + role='alert' text
+- Date modified indicator mandatory on every page
+- Dates are text inputs — never add a calendar
+- Canada signature and wordmark are protected identity assets
+
+---
+
+## Output contract
+
+1. Reason — why this component over alternatives
+2. Selected components — file paths and titles
+3. GCWeb classes needed — exact class names
+4. Bilingual strings — EN and FR for all generated labels
+5. Constraint verification — preserve elements intact
+6. Recommended next — what to retrieve next

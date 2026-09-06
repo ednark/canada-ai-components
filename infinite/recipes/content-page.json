@@ -1,0 +1,30 @@
+{
+  "recipe": "content-page",
+  "title": "Canada.ca content page",
+  "description": "Full official chrome: header with language toggle and signature, breadcrumb, footer, date modified.",
+  "aliases": ["collection:content-page", "page-template"],
+  "components": [
+    { "order": 1, "component": "header", "variant": "default", "file": "header/default.html", "role": "page-chrome", "required": true, "reason": "Government of Canada signature, language toggle, search" },
+    { "order": 2, "component": "breadcrumb", "variant": "default", "file": "breadcrumb/default.html", "role": "navigation", "required": false, "reason": "Below the header for deep pages" },
+    { "order": 3, "component": "footer", "variant": "default", "file": "footer/default.html", "role": "page-chrome", "required": true, "reason": "About-government links and Canada wordmark" },
+    { "order": 4, "component": "date-modified", "variant": "default", "file": "date-modified/default.html", "role": "feedback", "required": true, "reason": "Mandatory freshness indicator above the footer" }
+  ],
+  "nesting": "DOM order 1 → 2 → <main id='wb-cont'> content → 4 → footer. The language toggle inside the header links to the French equivalent page",
+  "validationOrder": [
+    "Language toggle targets an existing equivalent page",
+    "Breadcrumb last item carries aria-current='page' without a link",
+    "Date modified reflects the real content change date",
+    "html lang attribute set (en or fr) and matches the page language"
+  ],
+  "a11yNotes": [
+    "Never restyle the Canada signature or wordmark",
+    "Both EN and FR versions must exist — Official Languages Act requirement",
+    "Landmarks: banner (header), contentinfo (footer)"
+  ],
+  "agentPromptSequence": [
+    "1. Place the header with signature, language toggle, and search",
+    "2. Add the breadcrumb for deep pages",
+    "3. Wrap content in <main id='wb-cont'>",
+    "4. Close with footer and the date-modified indicator"
+  ]
+}

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System gc header (signature + language toggle) demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GC header (signature + language toggle) (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "header",
+    "canadaClass": "header",
+    "section": "navigation",
+    "variant": "default",
+    "requiresJs": "optional",
+    "interaction": [
+      "click",
+      "focus"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "header",
+      "signature",
+      "wordmark",
+      "language",
+      "toggle",
+      "identity"
+    ],
+    "description": "GC header with Canada signature, language toggle, and search.",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Every page — Government of Canada signature, language toggle, search"
+    ],
+    "avoidWhen": [
+      "Never restyle the Canada wordmark or flag"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Keep the Government of Canada signature (wordmark + flag) and the language toggle (English/Français links). Set the search action. The signature links to canada.ca.",
+    "relatedComponents": [
+      "language-toggle",
+      "footer",
+      "search"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "moderate",
+      "estimatedTokens": 190,
+      "renderingTimeMs": 35,
+      "recommendedModel": "haiku"
+    },
+    "compositionRecipes": [
+      "content-page"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      "Government of Canada signature (wordmark + flag)",
+      "Language toggle links (English/Français) — both must always be present",
+      "Search form with hidden label"
+    ],
+    "editable": [
+      "Search action",
+      "Menu links"
+    ],
+    "limitations": [
+      "The Canada wordmark and flag are protected identity assets — never restyle or translate the signature",
+      "Bilingual parity is mandatory: the toggle must offer the equivalent page in the other language"
+    ],
+    "portableInvariants": [
+      "Language toggle present on every page",
+      "Signature links to canada.ca"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "header/default.html",
+  "title": "GC header (signature + language toggle) (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.canada-header{border-bottom:0;margin:-2rem -2rem 2rem;background:#fff;border-bottom:1px solid #eaebed}
+header{padding:0}
+#wb-lng{list-style:none;margin:0;padding:.5rem 1rem;display:flex;justify-content:flex-end;gap:1rem}
+#wb-lng a{color:#284162}
+.brand{padding:.5rem 1rem;display:block}
+.gc-search{padding:.5rem 1rem 1rem}
+.gc-search form{display:flex;gap:.5rem;max-width:30rem}
+.gc-search .form-control{border-radius:4px 0 0 4px}
+.gc-search .btn{border-radius:0 4px 4px 0}
+
+</style>
+</head>
+<body>
+<header>
+  <div id="wb-lng">
+    <ul class="list-inline">
+      <li><a href="#" lang="fr" hreflang="fr">Français</a></li>
+    </ul>
+  </div>
+  <div class="brand">
+    <a href="https://www.canada.ca/en.html">
+      <span class="wb-inv">Government of Canada</span>
+      <span class="flag"><span class="wb-inv">Symbol of the Government of Canada</span></span>
+    </a>
+  </div>
+  <section class="gc-search">
+    <form role="search" action="#" method="get">
+      <label for="hdr-search" class="wb-inv">Search Canada.ca</label>
+      <input id="hdr-search" name="q" type="search" class="form-control" placeholder="Search Canada.ca">
+      <button type="submit" class="btn btn-primary" title="Search Canada.ca">Search</button>
+    </form>
+  </section>
+</header>
+<div class="cap">header default</div>
+</body>
+</html>

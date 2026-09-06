@@ -1,0 +1,28 @@
+{
+  "recipe": "validation-errors",
+  "title": "Validation error state",
+  "description": "Danger alert plus inline field errors — Canada.ca has no global error summary, so errors stay with their fields.",
+  "aliases": ["collection:validation-errors"],
+  "components": [
+    { "order": 1, "component": "alert", "variant": "danger", "file": "alert/danger.html", "role": "feedback", "required": true, "reason": "Page-level danger alert stating submission failed and why" },
+    { "order": 2, "component": "text-input", "variant": "default", "file": "text-input/default.html", "role": "input", "required": true, "reason": "Instantiate with has-error on the group and inline error text (role='alert') per failing field" },
+    { "order": 3, "component": "button", "variant": "primary", "file": "button/primary.html", "role": "action", "required": true, "reason": "Resubmit action" }
+  ],
+  "nesting": "Danger alert 1 above the form; errored fields (2 in error state) inside their form groups; button 3 last",
+  "validationOrder": [
+    "Every failing field shows inline error text with role='alert' — do not add a global error summary (none exists in the design system)",
+    "Required markers remain in labels",
+    "Both language versions of the error text exist"
+  ],
+  "a11yNotes": [
+    "role='alert' on the danger alert announces the failure",
+    "Inline error text near each field keeps error-context association",
+    "Colour never the only carrier of meaning"
+  ],
+  "agentPromptSequence": [
+    "1. Place the danger alert at the top of main describing the failure",
+    "2. For each failing field: has-error on the form-group, inline error text with role='alert'",
+    "3. Keep the submit button unchanged",
+    "4. Provide EN and FR error strings"
+  ]
+}
