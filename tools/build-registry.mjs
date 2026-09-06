@@ -129,6 +129,15 @@ details[open] summary:before{content:"−"}
 .table td{padding:.5rem .75rem;border-bottom:1px solid #ccc}
 .table-striped tbody tr:nth-child(even){background:#f8f8f8}
 `
+,
+'footnotes': `.wb-fnotes{border-top:1px solid #ccc;padding-top:1rem;margin-top:2rem;max-width:40rem}
+.wb-fnotes h2{font-size:1.125rem;margin:0 0 .5rem}
+.footnotes{list-style:decimal;margin:0;padding-left:1.5rem}
+.footnotes p{margin:.25rem 0;font-size:.875rem}
+.fn-lnk a,.fn-lnk{color:#284162;text-decoration:underline;font-size:.75rem;vertical-align:super}
+.fn-rtn{color:#284162;font-size:.75rem;text-decoration:underline}
+.example-body{max-width:40rem}
+`
 };
 
 
@@ -147,16 +156,7 @@ function costDefaults(bytes, requiresJs) {
 
 // ─── Recipe membership ───────────────────────────────────────────────────────
 
-const recipeMembership = {,
-  'footnotes': `.wb-fnotes{border-top:1px solid #ccc;padding-top:1rem;margin-top:2rem;max-width:40rem}
-.wb-fnotes h2{font-size:1.125rem;margin:0 0 .5rem}
-.footnotes{list-style:decimal;margin:0;padding-left:1.5rem}
-.footnotes p{margin:.25rem 0;font-size:.875rem}
-.fn-lnk a,.fn-lnk{color:#284162;text-decoration:underline;font-size:.75rem;vertical-align:super}
-.fn-rtn{color:#284162;font-size:.75rem;text-decoration:underline}
-.example-body{max-width:40rem}
-`
-};
+const recipeMembership = {};
 try {
   const recipesDir = join(TILE_DIR, 'recipes');
   for (const item of readdirSync(recipesDir)) {

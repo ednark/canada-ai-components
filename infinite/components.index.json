@@ -3,12 +3,12 @@
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
   "counts": {
-    "total": 24,
+    "total": 25,
     "bySection": {
       "feedback": 5,
       "navigation": 7,
       "forms": 10,
-      "data-display": 2
+      "data-display": 3
     }
   },
   "components": [
@@ -784,6 +784,58 @@
       "compositionRecipes": [
         "content-page"
       ]
+    },
+    {
+      "file": "footnotes/default.html",
+      "title": "Footnotes (default)",
+      "_schemaVersion": 2,
+      "canadaComponentType": "footnotes",
+      "canadaClass": "wb-fnotes",
+      "section": "data-display",
+      "variant": "default",
+      "requiresJs": "optional",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility",
+        "WCAG 2.1 AA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "footnotes",
+        "citations",
+        "references",
+        "wet-boew"
+      ],
+      "description": "Footnote references and notes section (WET-BOEW footnotes pattern).",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "table",
+        "date-modified"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate"
     },
     {
       "file": "header/default.html",

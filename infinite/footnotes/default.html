@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Canada.ca Design System footnotes demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Footnotes (default)</title>
+<script type="application/json" id="canada-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "canadaComponentType": "footnotes",
+    "canadaClass": "wb-fnotes",
+    "section": "data-display",
+    "variant": "default",
+    "requiresJs": "optional",
+    "interaction": [
+      "click",
+      "focus"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "Standard on Web Accessibility",
+      "WCAG 2.1 AA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "footnotes",
+      "citations",
+      "references",
+      "wet-boew"
+    ],
+    "description": "Footnote references and notes section (WET-BOEW footnotes pattern).",
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Citing sources or adding clarifying notes in policy and guidance content",
+      "Verified against the WET-BOEW footnotes pattern"
+    ],
+    "avoidWhen": [
+      "Short content where a parenthetical suffices"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "In-body refs are sup.fn-lnk links (id=fnN-rf) targeting the note; each note ends with a fn-rtn link back to its referrer. Keep the return links — they preserve reading position.",
+    "relatedComponents": [
+      "table",
+      "date-modified"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "moderate",
+      "estimatedTokens": 116,
+      "renderingTimeMs": 35,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "aside[role='region'] with aria-labelledby pointing at the 'Footnotes' heading",
+      "ol.footnotes structure with per-note ids (fnN-M)",
+      "fn-lnk / fn-rtn link pairing between body and notes"
+    ],
+    "editable": [
+      "Note text",
+      "Referrer anchors"
+    ],
+    "limitations": [
+      "Bilingual parity: footnote labels (Note N / Retour à la référence N) must switch with page language"
+    ],
+    "portableInvariants": [
+      "Referrer/return link pairing is bidirectional",
+      "Notes remain real list items"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "provenance": {
+    "observed": "2026-09-06",
+    "source": "https://wet-boew.github.io/wet-boew/demos/footnotes/footnotes-en.html (via web.archive.org — canada.ca direct fetches timed out)",
+    "method": "live-site observation"
+  },
+  "file": "footnotes/default.html",
+  "title": "Footnotes (default)"
+}
+</script>
+<style>
+body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
+a{color:#284162}
+h2{font-size:1.375rem;margin:0 0 .5rem}
+:focus-visible{outline:2px solid #0535d2;outline-offset:2px}
+.wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+
+.wb-fnotes{border-top:1px solid #ccc;padding-top:1rem;margin-top:2rem;max-width:40rem}
+.wb-fnotes h2{font-size:1.125rem;margin:0 0 .5rem}
+.footnotes{list-style:decimal;margin:0;padding-left:1.5rem}
+.footnotes p{margin:.25rem 0;font-size:.875rem}
+.fn-lnk a,.fn-lnk{color:#284162;text-decoration:underline;font-size:.75rem;vertical-align:super}
+.fn-rtn{color:#284162;font-size:.75rem;text-decoration:underline}
+.example-body{max-width:40rem}
+
+</style>
+</head>
+<body>
+<p class="example-body">Employment insurance rates are set annually.<sup class="fn-lnk" id="fn1-rf"><a class="fn-lnk" href="#fn1">1</a></sup> Rates vary by region.</p>
+
+<aside class="wb-fnotes" role="region" aria-labelledby="fn-note">
+  <h2 id="fn-note">Footnotes</h2>
+  <ol class="footnotes">
+    <li id="fn1">
+      <p> EI premium rates are published each January. <a class="fn-rtn" href="#fn1-rf">Return to footnote 1 referrer</a></p>
+    </li>
+  </ol>
+</aside>
+<div class="cap">footnotes default</div>
+</body>
+</html>

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
-  "total": 24,
+  "total": 25,
   "designSystem": "Canada.ca Design System (GCWeb) 5.x",
   "facets": {
     "canadaComponentType": {
@@ -14,6 +14,7 @@
       "date-modified": 1,
       "details": 1,
       "footer": 1,
+      "footnotes": 1,
       "header": 1,
       "language-toggle": 1,
       "pagination": 1,
@@ -28,14 +29,14 @@
       "feedback": 5,
       "navigation": 7,
       "forms": 10,
-      "data-display": 2
+      "data-display": 3
     },
     "variant": {
       "danger": 1,
       "info": 1,
       "success": 1,
       "warning": 1,
-      "default": 16,
+      "default": 17,
       "disabled": 1,
       "link": 1,
       "primary": 1,
@@ -43,30 +44,30 @@
     },
     "requiresJs": {
       "no": 23,
-      "optional": 1
+      "optional": 2
     },
     "interaction": {
-      "focus": 20,
-      "click": 14,
+      "focus": 21,
+      "click": 15,
       "keyboard": 7,
       "type": 3,
       "change": 1
     },
     "a11y": {
-      "wcag21AA": 24,
-      "keyboardNav": 21,
-      "screenReader": 24,
-      "reducedMotion": 24,
-      "forcedColors": 24,
-      "ariaAttributes": 24
+      "wcag21AA": 25,
+      "keyboardNav": 22,
+      "screenReader": 25,
+      "reducedMotion": 25,
+      "forcedColors": 25,
+      "ariaAttributes": 25
     },
     "govCompliance": {
-      "Standard on Web Accessibility": 24,
-      "WCAG 2.1 AA": 24
+      "Standard on Web Accessibility": 25,
+      "WCAG 2.1 AA": 25
     },
     "costTier": {
       "cheap": 23,
-      "moderate": 1
+      "moderate": 2
     },
     "compositionRecipes": {
       "confirmation-page": 8,
@@ -76,20 +77,20 @@
       "search-results": 4
     },
     "languages": {
-      "en": 24,
-      "fr": 24
+      "en": 25,
+      "fr": 25
     },
     "piiHandling": {
-      "displays_only": 13,
+      "displays_only": 14,
       "none": 5,
       "accepts_input": 6
     },
     "touchTargetSize": {
-      "44px": 21,
+      "44px": 22,
       "n/a": 3
     },
     "supportedTokenProfiles": {
-      "highContrast": 24
+      "highContrast": 25
     }
   }
 }
