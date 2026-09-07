@@ -338,7 +338,7 @@ export const inventory = [
     audit: false,
     useWhen: ["Every page — Government of Canada signature, language toggle, search"],
     avoidWhen: ["Never restyle the Canada wordmark or flag"],
-    agentPrompt: "Keep the Government of Canada signature (wordmark + flag) and the language toggle (English/Français links). Set the search action. The signature links to canada.ca.",
+    agentPrompt: "Keep the Government of Canada signature (wordmark + flag) and the language toggle (English/Français links). Set the search action. The signature links to canada.ca. Every page needs skip links (wb-slc) in the page markup — the Canada registry has no skiplinks tile, so add them above this header.",
     preserve: [
       "Government of Canada signature (wordmark + flag)",
       "Language toggle links (English/Français) — both must always be present",

@@ -5,8 +5,7 @@
 <meta name="description" content="Canada.ca Design System gc header (signature + language toggle) demonstrating the default variant.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GC header (signature + language toggle) (default)</title>
-<script type="application/json" id="canada-agent-meta">
-{
+<script type="application/json" id="canada-agent-meta">{
   "_schemaVersion": 2,
   "discovery": {
     "canadaComponentType": "header",
@@ -69,7 +68,7 @@
     ]
   },
   "instruction": {
-    "agentPrompt": "Keep the Government of Canada signature (wordmark + flag) and the language toggle (English/Français links). Set the search action. The signature links to canada.ca.",
+    "agentPrompt": "Keep the Government of Canada signature (wordmark + flag) and the language toggle (English/Français links). Set the search action. The signature links to canada.ca. Every page needs skip links (wb-slc) in the page markup — the Canada registry has no skiplinks tile, so add them above this header.",
     "relatedComponents": [
       "language-toggle",
       "footer",
@@ -101,7 +100,8 @@
     ],
     "limitations": [
       "The Canada wordmark and flag are protected identity assets — never restyle or translate the signature",
-      "Bilingual parity is mandatory: the toggle must offer the equivalent page in the other language"
+      "Bilingual parity is mandatory: the toggle must offer the equivalent page in the other language",
+      "Skip links (wb-slc) are not part of this tile — add them in page markup above the header"
     ],
     "portableInvariants": [
       "Language toggle present on every page",
@@ -113,8 +113,7 @@
   ],
   "file": "header/default.html",
   "title": "GC header (signature + language toggle) (default)"
-}
-</script>
+}</script>
 <style>
 body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
 .cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}

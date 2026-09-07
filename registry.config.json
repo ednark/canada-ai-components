@@ -75,5 +75,25 @@
   "contentLanguages": [
     "en",
     "fr"
+  ],
+  "gaps": [
+    {
+      "concept": "card (doormat promo)",
+      "status": "deferred",
+      "nearestAlternative": "heading+link sections",
+      "reason": " canada.ca renders doormat promo cards (gc-srvinfo stretched-link); top tile-addition candidate per the T2 round-trip"
+    },
+    {
+      "concept": "combobox",
+      "status": "deferred",
+      "nearestAlternative": "select",
+      "reason": "Not among the tiled Canada.ca components"
+    },
+    {
+      "concept": "error-summary",
+      "status": "not_part_of_design_system",
+      "nearestAlternative": "alert-danger + inline role=alert error text per field",
+      "reason": "Canada.ca handles validation errors inline per field; there is no page-level error summary component"
+    }
   ]
 }
