@@ -50,6 +50,24 @@ A structured component knowledge base for AI coding agents building Government o
 
 CLI: `node _base/validate-registry.mjs` (lint), `--conformance .` (certification)
 
+
+## Quality gates and declared gaps
+
+Do not retrieve or deploy a component that:
+
+- Has `costTier: "expensive"` unless the task explicitly requires the richer behavior
+- Has `requiresJs: "required"` when the delivery context has no JavaScript
+- Whose `constraints.knownLimitations` block the delivery context
+- Implements a concept declared in `gaps` (registry.config.json) — use the gap's nearestAlternative; never invent component-style classes
+- Needs layout or typography classes outside the tiles — use `infinite/core-classes.json`
+
+Registry mandates that act as gates:
+
+- Bilingual EN/FR parity is law (Official Languages Act) — produce both language strings; the language toggle must target an equivalent page
+- Inline per-field errors only (role='alert') — there is no page-level error summary
+- Every page carries the Date modified indicator (mandatory)
+- Check `govCompliance` (Standard on Web Accessibility / WCAG 2.1 AA)
+
 ## Constraint Priority
 
 1. `constraints.preserve` — NEVER modify

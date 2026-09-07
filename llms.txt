@@ -55,6 +55,41 @@ Canada.ca Design System registry for AI coding agents building Government of Can
 
 ---
 
+
+
+## Decision strategy
+
+1. Understand the requested outcome: what must the interface accomplish?
+2. Infer the interface type: single component, section, or full page
+3. Check declared gaps (registry.config.json) before searching — use each gap's nearestAlternative
+4. Search the index, filtering by facets
+5. Prefer existing components over generating new UI from scratch
+6. Prefer `costTier: "cheap"` and `requiresJs: "no"` unless the task requires otherwise
+7. Respect the registry mandates (see Quality gates)
+8. Only generate new UI if no suitable component exists
+
+---
+## Quality gates and declared gaps
+
+Do not retrieve or deploy a component that:
+
+- Has `costTier: "expensive"` unless the task explicitly requires the richer behavior — avoid for mobile-primary or static contexts
+- Has `requiresJs: "required"` when the delivery context has no JavaScript
+- Whose `constraints.knownLimitations` block the delivery context
+- Implements a concept declared in `gaps` (registry.config.json) — use the gap's nearestAlternative instead; never invent a component-style class for it
+- Needs layout or typography classes outside the tiles — use `core-classes.json` (the documented untiled layer), never invented component classes
+
+Registry mandates that act as gates:
+
+- Bilingual EN/FR parity is law (Official Languages Act) — produce both language strings; the language toggle must target an equivalent page
+- Inline per-field errors only (role='alert') — there is no page-level error summary
+- Every page carries the Date modified indicator (mandatory)
+- Check `govCompliance` (Standard on Web Accessibility / WCAG 2.1 AA)
+
+Declared gaps: see `gaps` in registry.config.json. Untiled layout/typography layer: see `infinite/core-classes.json`.
+
+---
+
 ## Output contract
 
 1. Reason — why this component over alternatives

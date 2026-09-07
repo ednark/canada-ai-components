@@ -11,8 +11,7 @@
   "tileFetchPattern": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/{file}",
   "designSystem": {
     "name": "Canada.ca Design System (GCWeb)",
-    "version": "5.x",
-    "url": "https://design.canada.ca"
+    "version": "5.x"
   },
   "agentMetaId": "canada-agent-meta",
   "tileDir": "infinite",
@@ -31,7 +30,6 @@
     "touchTargetSize",
     "supportedTokenProfiles"
   ],
-  "adaptationDetail": "embedded in each tile as <script type=\"application/json\" id=\"canada-agent-meta\">",
   "flow": [
     "GET agents.json",
     "GET facets.json",
@@ -63,15 +61,6 @@
       "query_compliance",
       "get_versions"
     ]
-  },
-  "tokenProfiles": {
-    "highContrast": {
-      "description": "forced-colors / high-contrast mode support",
-      "tokenOverrides": {
-        "border": "2px solid currentColor",
-        "background": "transparent"
-      }
-    }
   },
   "compatibilityPath": "compatibility.json",
   "updated": "0.1.0",
