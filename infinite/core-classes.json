@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "registry": "canada-ai-components",
+  "description": "Real, documented design-system classes that are NOT tiled components — the untiled core layer for page assembly. Consumed by cross-registry coverage checking.",
+  "categories": {
+    "layout": [
+      "container",
+      "row",
+      "col-md-6",
+      "col-lg-4",
+      "col-sm-6",
+      "cmp-container"
+    ],
+    "typography": [],
+    "elements": [
+      "wb-inv",
+      "wb-slc",
+      "wb-srch-q",
+      "wtrmrk",
+      "flag",
+      "list-inline",
+      "form-inline",
+      "legend-brdr-bttm",
+      "gc-search",
+      "gc-srvinfo",
+      "doormat-link-set",
+      "stretched-link",
+      "well",
+      "well-sm",
+      "btn-primary",
+      "btn-default",
+      "btn-link",
+      "cmp-container container",
+      "wb-eqht",
+      "wb-eqht-grd"
+    ],
+    "states": []
+  }
+}

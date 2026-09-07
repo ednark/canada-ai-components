@@ -43,7 +43,11 @@
   "recipesUrl": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/recipes/index.json",
   "versionsUrl": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/versions.json",
   "compatibilityUrl": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/compatibility.json",
-  "compatibilityTargets": ["uswds", "govuk", "dsfr"],
+  "compatibilityTargets": [
+    "uswds",
+    "govuk",
+    "dsfr"
+  ],
   "mcp": {
     "enabled": true,
     "server": "_base/mcp/server.mjs",
@@ -63,9 +67,16 @@
   "tokenProfiles": {
     "highContrast": {
       "description": "forced-colors / high-contrast mode support",
-      "tokenOverrides": { "border": "2px solid currentColor", "background": "transparent" }
+      "tokenOverrides": {
+        "border": "2px solid currentColor",
+        "background": "transparent"
+      }
     }
   },
   "compatibilityPath": "compatibility.json",
-  "updated": "0.1.0"
+  "updated": "0.1.0",
+  "contentLanguages": [
+    "en",
+    "fr"
+  ]
 }
