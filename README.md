@@ -23,6 +23,14 @@ MCP: `npm run mcp` (9 tools). Full agent docs: [AGENTS.md](AGENTS.md) · [llms.t
 - Browse `infinite/<component>/<variant>.html` in a browser — every tile renders standalone
 - Validate: `node _base/validate-registry.mjs`
 
+
+## Resolved views (appearance)
+
+Tiles are self-contained (component CSS inline), so every tile renders correctly in a plain browser. For design tools, static parsers, and layout-accurate preview, every tile also has a generated **resolved view** sibling: `{variant}.resolved.html` — the tile's DOM with computed geometry, colors, and typography flattened inline. Index records expose the path as the `resolvedView` field. Views carry a SHA-256 stamp of their tile source (the validator warns on stale views) and are validated by importing into third-party design tools — the OpenPencil field test imported all sampled views with full semantic fidelity. Regenerate after tile changes: `node _base/generate-resolved-view.mjs`.
+
+---
+
+
 ## Coverage
 
 **Forms:** button, text-input, textarea, select, checkbox (gc-chckbxrdio), radio, search
