@@ -66,7 +66,8 @@
       "compositionRecipes": [
         "confirmation-page",
         "validation-errors"
-      ]
+      ],
+      "resolvedView": "alert/danger.resolved.html"
     },
     {
       "file": "alert/info.html",
@@ -122,7 +123,8 @@
       "compositionRecipes": [
         "confirmation-page",
         "validation-errors"
-      ]
+      ],
+      "resolvedView": "alert/info.resolved.html"
     },
     {
       "file": "alert/success.html",
@@ -178,7 +180,8 @@
       "compositionRecipes": [
         "confirmation-page",
         "validation-errors"
-      ]
+      ],
+      "resolvedView": "alert/success.resolved.html"
     },
     {
       "file": "alert/warning.html",
@@ -234,7 +237,8 @@
       "compositionRecipes": [
         "confirmation-page",
         "validation-errors"
-      ]
+      ],
+      "resolvedView": "alert/warning.resolved.html"
     },
     {
       "file": "back-link/default.html",
@@ -285,7 +289,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "back-link/default.resolved.html"
     },
     {
       "file": "breadcrumb/default.html",
@@ -340,7 +345,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "content-page"
-      ]
+      ],
+      "resolvedView": "breadcrumb/default.resolved.html"
     },
     {
       "file": "button/default.html",
@@ -398,7 +404,8 @@
         "confirmation-page",
         "contact-form",
         "validation-errors"
-      ]
+      ],
+      "resolvedView": "button/default.resolved.html"
     },
     {
       "file": "button/disabled.html",
@@ -456,7 +463,8 @@
         "confirmation-page",
         "contact-form",
         "validation-errors"
-      ]
+      ],
+      "resolvedView": "button/disabled.resolved.html"
     },
     {
       "file": "button/link.html",
@@ -514,7 +522,8 @@
         "confirmation-page",
         "contact-form",
         "validation-errors"
-      ]
+      ],
+      "resolvedView": "button/link.resolved.html"
     },
     {
       "file": "button/primary.html",
@@ -572,7 +581,8 @@
         "confirmation-page",
         "contact-form",
         "validation-errors"
-      ]
+      ],
+      "resolvedView": "button/primary.resolved.html"
     },
     {
       "file": "checkbox/default.html",
@@ -625,7 +635,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "checkbox/default.resolved.html"
     },
     {
       "file": "date-modified/default.html",
@@ -676,7 +687,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "content-page"
-      ]
+      ],
+      "resolvedView": "date-modified/default.resolved.html"
     },
     {
       "file": "details/default.html",
@@ -728,7 +740,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "details/default.resolved.html"
     },
     {
       "file": "footer/default.html",
@@ -783,7 +796,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "content-page"
-      ]
+      ],
+      "resolvedView": "footer/default.resolved.html"
     },
     {
       "file": "footnotes/default.html",
@@ -835,7 +849,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "moderate"
+      "costTier": "moderate",
+      "resolvedView": "footnotes/default.resolved.html"
     },
     {
       "file": "header/default.html",
@@ -893,7 +908,8 @@
       "costTier": "moderate",
       "compositionRecipes": [
         "content-page"
-      ]
+      ],
+      "resolvedView": "header/default.resolved.html"
     },
     {
       "file": "language-toggle/default.html",
@@ -945,7 +961,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "language-toggle/default.resolved.html"
     },
     {
       "file": "pagination/default.html",
@@ -999,7 +1016,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "search-results"
-      ]
+      ],
+      "resolvedView": "pagination/default.resolved.html"
     },
     {
       "file": "radio/default.html",
@@ -1051,7 +1069,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "radio/default.resolved.html"
     },
     {
       "file": "search/default.html",
@@ -1107,7 +1126,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "search-results"
-      ]
+      ],
+      "resolvedView": "search/default.resolved.html"
     },
     {
       "file": "select/default.html",
@@ -1158,7 +1178,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "select/default.resolved.html"
     },
     {
       "file": "table/default.html",
@@ -1209,7 +1230,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "search-results"
-      ]
+      ],
+      "resolvedView": "table/default.resolved.html"
     },
     {
       "file": "table/striped.html",
@@ -1260,7 +1282,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "search-results"
-      ]
+      ],
+      "resolvedView": "table/striped.resolved.html"
     },
     {
       "file": "text-input/default.html",
@@ -1316,7 +1339,8 @@
       "compositionRecipes": [
         "contact-form",
         "validation-errors"
-      ]
+      ],
+      "resolvedView": "text-input/default.resolved.html"
     },
     {
       "file": "textarea/default.html",
@@ -1370,7 +1394,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "contact-form"
-      ]
+      ],
+      "resolvedView": "textarea/default.resolved.html"
     }
   ]
 }

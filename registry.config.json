@@ -95,5 +95,13 @@
       "nearestAlternative": "alert-danger + inline role=alert error text per field",
       "reason": "Canada.ca handles validation errors inline per field; there is no page-level error summary component"
     }
-  ]
+  ],
+  "staticView": {
+    "css": [],
+    "viewport": {
+      "width": 1280,
+      "height": 4000
+    },
+    "note": "Resolved-view generation input (see _base/generate-resolved-view.mjs). Tiles are self-contained; no design-system CSS injection needed."
+  }
 }
