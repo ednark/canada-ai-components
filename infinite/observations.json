@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "note": "Field observations of sites extending or using canada-ai-components components. Records about the ecosystem — never tiles. See _base/protocol.md Surface 7.",
+  "observations": [
+    {
+      "observed": "2026-09-29",
+      "site": "www.cra-arc.gc.ca",
+      "url": "https://www.cra-arc.gc.ca",
+      "kind": "composition",
+      "extension": "most-requested section (wb-eqht list)",
+      "note": "documented canada.ca design pattern (Most requested) observed on cra + canada.ca — 2 sites; no most-requested pattern in the registry — pattern/recipe candidate",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "www.cra-arc.gc.ca",
+      "url": "https://www.cra-arc.gc.ca",
+      "kind": "extension",
+      "extension": "wb-rprt-prblm (report-a-problem widget + form/toggle/thank-you states)",
+      "note": "wet-boew feedback widget, site-local",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "www.canada.ca",
+      "url": "https://www.canada.ca/en.html",
+      "family": "card",
+      "kind": "composition",
+      "extension": "gc-featured-link (stretched-link feature banner)",
+      "note": "feature banner composition above the doormat grid",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "www.canada.ca",
+      "url": "https://www.canada.ca/en.html",
+      "kind": "composition",
+      "extension": "gcweb-menu (AJAX-loaded hierarchical menu)",
+      "note": "the theme-and-topic menu implementation — already a doctrine-cited deferral; observed again in the crawl",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    }
+  ]
+}
