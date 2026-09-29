@@ -5,8 +5,7 @@
 <meta name="description" content="Canada.ca Design System gc footer demonstrating the default variant.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GC footer (default)</title>
-<script type="application/json" id="canada-agent-meta">
-{
+<script type="application/json" id="canada-agent-meta">{
   "_schemaVersion": 2,
   "discovery": {
     "canadaComponentType": "footer",
@@ -56,7 +55,8 @@
       "requiredMinSpacing": "8px",
       "orientationLocked": false,
       "fullscreenSafe": true
-    }
+    },
+    "origin": "live-site"
   },
   "selection": {
     "useWhen": [
@@ -96,6 +96,7 @@
       "Link URLs"
     ],
     "limitations": [
+      "The Government of Canada wordmark is a reserved identity asset — replace the src with the agency variant; do not restyle it",
       "The wordmark is a protected identity asset"
     ],
     "portableInvariants": [
@@ -107,9 +108,14 @@
     "highContrast"
   ],
   "file": "footer/default.html",
-  "title": "GC footer (default)"
-}
-</script>
+  "title": "GC footer (default)",
+  "provenance": {
+    "observed": "2026-09-29",
+    "method": "live-site observation",
+    "source": "https://www.canada.ca/en.html (2026-09-29 live capture); markup classes verified against WET-BOEW v19.6.0 theme stylesheet (https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css); markup re-verified against the live page in Chrome 2026-09-29 (the class=\"footer\" attribute was invented — the live footer is <footer id=\"wb-info\"> inside .global-footer)",
+    "designSystemVersion": "19.6.0"
+  }
+}</script>
 <style>
 body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
 .cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#6f6f6f;text-transform:uppercase}
@@ -128,11 +134,11 @@ legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
 </style>
 </head>
 <body>
-<footer id="wb-info" class="footer">
+<footer id="wb-info">
   <h2 class="wb-inv">About this site</h2>
   <p class="brand">
     <span class="wb-inv">Symbol of the Government of Canada</span>
-    <span class="flag"></span>
+    <img src="/etc/designs/canada/wet-boew/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
   </p>
   <nav aria-label="About this site">
     <ul class="list-inline">

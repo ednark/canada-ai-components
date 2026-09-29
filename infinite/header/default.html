@@ -57,7 +57,8 @@
       "requiredMinSpacing": "8px",
       "orientationLocked": false,
       "fullscreenSafe": true
-    }
+    },
+    "origin": "live-site"
   },
   "selection": {
     "useWhen": [
@@ -90,7 +91,6 @@
   },
   "constraints": {
     "preserve": [
-      "Government of Canada signature (wordmark + flag)",
       "Language toggle links (English/Français) — both must always be present",
       "Search form with hidden label"
     ],
@@ -99,6 +99,7 @@
       "Menu links"
     ],
     "limitations": [
+      "gc-search is a canada.ca site-level class, not part of WET-BOEW",
       "The Canada wordmark and flag are protected identity assets — never restyle or translate the signature",
       "Bilingual parity is mandatory: the toggle must offer the equivalent page in the other language",
       "Skip links (wb-slc) are not part of this tile — add them in page markup above the header"
@@ -112,7 +113,13 @@
     "highContrast"
   ],
   "file": "header/default.html",
-  "title": "GC header (signature + language toggle) (default)"
+  "title": "GC header (signature + language toggle) (default)",
+  "provenance": {
+    "observed": "2026-09-29",
+    "method": "live-site observation",
+    "source": "https://www.canada.ca/en.html (2026-09-29 live capture); markup classes verified against WET-BOEW v19.6.0 theme stylesheet (https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css)",
+    "designSystemVersion": "19.6.0"
+  }
 }</script>
 <style>
 body{font-family:'Noto Sans',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:#333;padding:2rem;background:#fff;margin:0}
@@ -145,7 +152,7 @@ header{padding:0}
   <div class="brand">
     <a href="https://www.canada.ca/en.html">
       <span class="wb-inv">Government of Canada</span>
-      <span class="flag"><span class="wb-inv">Symbol of the Government of Canada</span></span>
+      <span class="wb-inv">Symbol of the Government of Canada</span><img src="/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="" property="logo">
     </a>
   </div>
   <section class="gc-search">

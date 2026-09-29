@@ -5,78 +5,128 @@
   <meta name="description" content="Feature promo card with stretched link, as rendered on canada.ca.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Card (Feature)</title>
-  <script type="application/json" id="canada-agent-meta">
-  {
-    "file": "card/feature.html",
-    "title": "Card (Feature)",
-    "_schemaVersion": 2,
-    "discovery": {
-      "description": "Feature promo card: image, heading link stretched across the card, and description, as rendered in the canada.ca 'Features' section.",
-      "canadaComponentType": "card",
-      "canadaClass": "gc-features",
-      "section": "content",
-      "variant": "feature",
-      "requiresJs": "no",
-      "interaction": ["click", "focus", "hover"],
-      "a11y": { "wcag21AA": true, "keyboardNav": true },
-      "govCompliance": ["Standard on Web Accessibility"],
-      "tier": "curated",
-      "tags": ["card", "promo", "feature", "stretched-link", "image"],
-      "origin": "live-site",
-      "languages": ["en", "fr"],
-      "compliance": { "nistControls": [], "standardWebAccessibility": true, "wcag21AA": true, "webAccessibilityDirective": true, "piiHandling": "displays_only", "auditTrailCompatible": false, "dataMaskingCompatible": false },
-      "mobileUX": { "touchTargetSize": "44px", "requiredMinSpacing": "8px", "orientationLocked": false, "fullscreenSafe": true }
+  <script type="application/json" id="canada-agent-meta">{
+  "file": "card/feature.html",
+  "title": "Card (Feature)",
+  "_schemaVersion": 2,
+  "discovery": {
+    "description": "Feature promo card: image, heading link stretched across the card, and description, as rendered in the canada.ca 'Features' section.",
+    "canadaComponentType": "card",
+    "canadaClass": "gc-features",
+    "section": "content",
+    "variant": "feature",
+    "requiresJs": "no",
+    "interaction": [
+      "click",
+      "focus",
+      "hover"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true
     },
-    "selection": {
-      "useWhen": [
-        "a promotional feature slot needs an image with a headline link",
-        "the whole card should be clickable (stretched-link pattern)"
-      ],
-      "avoidWhen": [
-        "multiple interactive elements are needed inside the card — the stretched link makes the whole card one target",
-        "no image is available — use the doormat variant"
-      ],
-      "guidance": [
-        { "guidance": true, "description": "Keep one heading link per card; the stretched-link overlay makes the whole card the click target" },
-        { "guidance": true, "description": "Provide meaningful alt text or empty alt for decorative images, as observed" },
-        { "guidance": false, "description": "Do not add nested links or buttons inside the stretched-link card" }
-      ]
+    "govCompliance": [
+      "Standard on Web Accessibility"
+    ],
+    "tier": "curated",
+    "tags": [
+      "card",
+      "promo",
+      "feature",
+      "stretched-link",
+      "image"
+    ],
+    "origin": "live-site",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "compliance": {
+      "nistControls": [],
+      "standardWebAccessibility": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
     },
-    "instruction": {
-      "agentPrompt": "Adapt the image, heading link, and description. The stretched-link overlay (positioned ::after on the well container) is the observed canada.ca mechanism — keep the card container positioned relative.",
-      "relatedComponents": ["header", "footer"]
-    },
-    "coordination": {
-      "compositionCost": { "costTier": "cheap", "estimatedTokens": 1600, "renderingTimeMs": 5, "recommendedModel": "haiku" },
-      "agentPromptSequence": [
-        "1. Place the gc-features section inside the main content container",
-        "2. Fill the wb-eqht-grd row with feature cards (col-sm-6)",
-        "3. Keep one stretched heading link per card"
-      ]
-    },
-    "constraints": {
-      "preserve": [
-        "section.well.well-sm card container with position:relative (stretched-link anchor)",
-        "h3 > a.stretched-link heading-link structure",
-        "col-sm-6 column classes on each card"
-      ],
-      "portableInvariants": [
-        "single heading link per card, stretched across the card surface",
-        "img before the heading, description after"
-      ],
-      "editable": ["Image, heading, link target, description", "Number of cards"],
-      "limitations": [
-        "Observed variant: this structure comes from canada.ca's live implementation, not from documented design-system doctrine (discovery.origin: live-site)",
-        "The tile's image URL loads from canada.ca; swap for a local asset in production"
-      ]
-    },
-    "provenance": {
-      "observed": "2026-09-29",
-      "method": "live-site observation",
-      "source": "https://www.canada.ca/en.html (home page — 'Features' gc-features section)"
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
     }
+  },
+  "selection": {
+    "useWhen": [
+      "a promotional feature slot needs an image with a headline link",
+      "the whole card should be clickable (stretched-link pattern)"
+    ],
+    "avoidWhen": [
+      "multiple interactive elements are needed inside the card — the stretched link makes the whole card one target",
+      "no image is available — use the doormat variant"
+    ],
+    "guidance": [
+      {
+        "guidance": true,
+        "description": "Keep one heading link per card; the stretched-link overlay makes the whole card the click target"
+      },
+      {
+        "guidance": true,
+        "description": "Provide meaningful alt text or empty alt for decorative images, as observed"
+      },
+      {
+        "guidance": false,
+        "description": "Do not add nested links or buttons inside the stretched-link card"
+      }
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Adapt the image, heading link, and description. The stretched-link overlay (positioned ::after on the well container) is the observed canada.ca mechanism — keep the card container positioned relative.",
+    "relatedComponents": [
+      "header",
+      "footer"
+    ]
+  },
+  "coordination": {
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 1600,
+      "renderingTimeMs": 5,
+      "recommendedModel": "haiku"
+    },
+    "agentPromptSequence": [
+      "1. Place the gc-features section inside the main content container",
+      "2. Fill the wb-eqht-grd row with feature cards (col-sm-6)",
+      "3. Keep one stretched heading link per card"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      "section.well.well-sm card container with position:relative (stretched-link anchor)",
+      "h3 > a.stretched-link heading-link structure",
+      "col-sm-6 column classes on each card"
+    ],
+    "portableInvariants": [
+      "single heading link per card, stretched across the card surface",
+      "img before the heading, description after"
+    ],
+    "editable": [
+      "Image, heading, link target, description",
+      "Number of cards"
+    ],
+    "limitations": [
+      "Observed variant: this structure comes from canada.ca's live implementation, not from documented design-system doctrine (discovery.origin: live-site)",
+      "The tile's image URL loads from canada.ca; swap for a local asset in production"
+    ]
+  },
+  "provenance": {
+    "observed": "2026-09-29",
+    "method": "live-site observation",
+    "source": "Class inventory verified against WET-BOEW v19.6.0 (https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css, header: v19.6.0 - 2026-08-18); original capture: https://www.canada.ca/en.html (home page — 'Features' gc-features section)",
+    "designSystemVersion": "19.6.0"
   }
-  </script>
+}</script>
   <style>
     body{font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#333;padding:2rem;background:#fff;margin:0}
     .cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}

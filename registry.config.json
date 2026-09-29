@@ -10,9 +10,10 @@
   "metadataSchemaVersion": 2,
   "tileFetchPattern": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/{file}",
   "designSystem": {
-    "name": "Canada.ca Design System (GCWeb)",
-    "version": "5.x",
-    "url": "https://design.canada.ca"
+    "name": "Canada.ca (WET-BOEW + GC Design System)",
+    "version": "19.6.0",
+    "url": "https://wet-boew.github.io/wet-boew/",
+    "notes": "WET-BOEW v19.6.0 (2026-08-18) is the verifiable ground truth: canada.ca serves /etc/designs/canada/wet-boew/css/theme.min.css, whose header declares the version. The page also loads GC Design System web components from the alpha CDN (@cdssnc/gcds-components@0.36.0; npm latest 0.47.0) — GCDS styles live inside shadow DOM and cannot be verified against a global stylesheet. Tiles are canada.ca site-implementation components (WET wb-* + Bootstrap + canada-specific gc-*/wb-* classes), not GCDS web components."
   },
   "agentMetaId": "canada-agent-meta",
   "tileDir": "infinite",

@@ -1,15 +1,40 @@
 {
   "schemaVersion": 1,
   "registry": "canada-ai-components",
-  "designSystem": { "name": "Canada.ca Design System (GCWeb)", "version": "5.x", "url": "https://design.canada.ca" },
+  "designSystem": {
+    "name": "Canada.ca (WET-BOEW + GC Design System)",
+    "version": "19.6.0",
+    "url": "https://wet-boew.github.io/wet-boew/"
+  },
   "versions": [
     {
       "version": "0.1.0",
       "releaseDate": "2026-09-06",
       "componentCount": 24,
       "breakingChanges": [],
-      "addedCategories": ["discovery", "selection", "instruction", "coordination", "constraints", "portability"],
-      "addedFacets": ["canadaComponentType", "section", "variant", "requiresJs", "interaction", "a11y", "govCompliance", "costTier", "compositionRecipes", "languages", "piiHandling", "touchTargetSize", "supportedTokenProfiles"],
+      "addedCategories": [
+        "discovery",
+        "selection",
+        "instruction",
+        "coordination",
+        "constraints",
+        "portability"
+      ],
+      "addedFacets": [
+        "canadaComponentType",
+        "section",
+        "variant",
+        "requiresJs",
+        "interaction",
+        "a11y",
+        "govCompliance",
+        "costTier",
+        "compositionRecipes",
+        "languages",
+        "piiHandling",
+        "touchTargetSize",
+        "supportedTokenProfiles"
+      ],
       "migrationPath": "Initial release.",
       "notes": "17 Canada.ca component families; 5 recipes incl. the mandatory bilingual content-page pattern; languages facet (en/fr) is the registry's distinctive contribution — Official Languages Act parity documented per tile"
     },
@@ -18,14 +43,22 @@
       "releaseDate": "2026-09-06",
       "componentCount": 25,
       "breakingChanges": [],
-      "addedCategories": ["provenance"],
+      "addedCategories": [
+        "provenance"
+      ],
       "addedFacets": [],
-      "metadataChanges": ["provenance block on field-observed tiles"],
+      "metadataChanges": [
+        "provenance block on field-observed tiles"
+      ],
       "migrationPath": "Fully additive.",
       "notes": "Field-research pass (canada.ca via archived capture): footnotes family verified against WET-BOEW footnotes demo; provenance.json session log added"
     }
   ],
   "designSystemVersions": [
-    { "version": "5.x", "status": "current", "notes": "Tiles target GCWeb/Canada.ca Design System markup" }
+    {
+      "version": "19.6.0",
+      "status": "current",
+      "notes": "WET-BOEW 19.6.0 is the verifiable ground truth (version declared in the served theme stylesheet). Previously recorded as the unverifiable \"5.x\". GC Design System (GCDS) web components are loaded from the alpha CDN at 0.36.0 (npm latest 0.47.0) and are NOT the target of these tiles."
+    }
   ]
 }

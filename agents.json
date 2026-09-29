@@ -10,8 +10,8 @@
   "metadataSchemaVersion": 2,
   "tileFetchPattern": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/infinite/{file}",
   "designSystem": {
-    "name": "Canada.ca Design System (GCWeb)",
-    "version": "5.x"
+    "name": "Canada.ca (WET-BOEW + GC Design System)",
+    "version": "19.6.0"
   },
   "agentMetaId": "canada-agent-meta",
   "tileDir": "infinite",

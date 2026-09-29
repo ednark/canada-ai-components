@@ -3,7 +3,7 @@
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
   "total": 27,
-  "designSystem": "Canada.ca Design System (GCWeb) 5.x",
+  "designSystem": "Canada.ca (WET-BOEW + GC Design System) 19.6.0",
   "facets": {
     "canadaComponentType": {
       "alert": 4,
@@ -98,7 +98,7 @@
       "highContrast": 25
     },
     "origin": {
-      "live-site": 3
+      "live-site": 5
     }
   }
 }

@@ -875,6 +875,7 @@
         "en",
         "fr"
       ],
+      "origin": "live-site",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -899,7 +900,7 @@
       "title": "Footnotes (default)",
       "_schemaVersion": 2,
       "canadaComponentType": "footnotes",
-      "canadaClass": "wb-fnotes",
+      "canadaClass": "wb-fnote",
       "section": "data-display",
       "variant": "default",
       "requiresJs": "optional",
@@ -987,6 +988,7 @@
         "en",
         "fr"
       ],
+      "origin": "live-site",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],

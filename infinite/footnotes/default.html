@@ -9,7 +9,7 @@
   "_schemaVersion": 2,
   "discovery": {
     "canadaComponentType": "footnotes",
-    "canadaClass": "wb-fnotes",
+    "canadaClass": "wb-fnote",
     "section": "data-display",
     "variant": "default",
     "requiresJs": "optional",
@@ -86,9 +86,9 @@
   },
   "constraints": {
     "preserve": [
-      "aside[role='region'] with aria-labelledby pointing at the 'Footnotes' heading",
-      "ol.footnotes structure with per-note ids (fnN-M)",
-      "fn-lnk / fn-rtn link pairing between body and notes"
+      "aside.wb-fnote with role=note",
+      "sup.fn-lnk > a.fn-lnk reference link",
+      "a.fn-rtn return link"
     ],
     "editable": [
       "Note text",
@@ -106,9 +106,10 @@
     "highContrast"
   ],
   "provenance": {
-    "observed": "2026-09-06",
-    "source": "https://wet-boew.github.io/wet-boew/demos/footnotes/footnotes-en.html (via web.archive.org — canada.ca direct fetches timed out)",
-    "method": "live-site observation"
+    "observed": "2026-09-29",
+    "method": "live-site observation",
+    "source": "WET-BOEW footnotes component markup (https://wet-boew.github.io/wet-boew/demos/footnotes/footnotes-en.html — current demo uses wb-fnote, fn-lnk, fn-rtn); the tile previously carried demo-scaffolding classes (wb-fnotes, footnotes, example-body) that exist in neither current WET-BOEW nor live canada.ca; Class inventory verified against WET-BOEW v19.6.0 (https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css, header: v19.6.0 - 2026-08-18)",
+    "designSystemVersion": "19.6.0"
   },
   "file": "footnotes/default.html",
   "title": "Footnotes (default)"
@@ -122,26 +123,23 @@ h2{font-size:1.375rem;margin:0 0 .5rem}
 .wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 legend.h5,.h5{font-weight:700;font-size:1rem;margin:0 0 .5rem}
 
-.wb-fnotes{border-top:1px solid #ccc;padding-top:1rem;margin-top:2rem;max-width:40rem}
-.wb-fnotes h2{font-size:1.125rem;margin:0 0 .5rem}
+.wb-fnote{border-top:1px solid #ccc;padding-top:1rem;margin-top:2rem;max-width:40rem}
+.wb-fnote h2{font-size:1.125rem;margin:0 0 .5rem}
 .footnotes{list-style:decimal;margin:0;padding-left:1.5rem}
 .footnotes p{margin:.25rem 0;font-size:.875rem}
 .fn-lnk a,.fn-lnk{color:#284162;text-decoration:underline;font-size:.75rem;vertical-align:super}
 .fn-rtn{color:#284162;font-size:.75rem;text-decoration:underline}
-.example-body{max-width:40rem}
+p.fn-ref{max-width:40rem}
 
 </style>
 </head>
 <body>
-<p class="example-body">Employment insurance rates are set annually.<sup class="fn-lnk" id="fn1-rf"><a class="fn-lnk" href="#fn1">1</a></sup> Rates vary by region.</p>
+<p>Employment insurance rates are set annually.<sup class="fn-lnk" id="fn1-rf"><a class="fn-lnk" href="#fn1">1</a></sup> Rates vary by region.</p>
 
-<aside class="wb-fnotes" role="region" aria-labelledby="fn-note">
-  <h2 id="fn-note">Footnotes</h2>
-  <ol class="footnotes">
-    <li id="fn1">
-      <p> EI premium rates are published each January. <a class="fn-rtn" href="#fn1-rf">Return to footnote 1 referrer</a></p>
-    </li>
-  </ol>
+<aside class="wb-fnote" role="note" id="fn1">
+  <h2 class="wb-inv">Footnote 1</h2>
+  <p>Employment insurance rates are set annually by region.</p>
+  <p><a class="fn-rtn" href="#fn1-rf">Return to text</a></p>
 </aside>
 <div class="cap">footnotes default</div>
 </body>
