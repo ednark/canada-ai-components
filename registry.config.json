@@ -107,5 +107,10 @@
       "height": 4000
     },
     "note": "Resolved-view generation input (see _base/generate-resolved-view.mjs). Tiles are self-contained; no design-system CSS injection needed."
-  }
+  },
+  "modifierSeparators": [
+    "--",
+    "__",
+    "-"
+  ]
 }
