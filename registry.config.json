@@ -93,7 +93,9 @@
       "concept": "error-summary",
       "status": "not_part_of_design_system",
       "nearestAlternative": "alert-danger + inline role=alert error text per field",
-      "reason": "Canada.ca handles validation errors inline per field; there is no page-level error summary component"
+      "reason": "Canada.ca handles validation errors inline per field; there is no page-level error summary component",
+      "consequence": "Do not add a page-level error summary; validation errors surface inline per field (alert-danger + role=alert error text)",
+      "source": "Canada.ca design system (https://design.canada.ca) — form guidance handles errors inline per field; no page-level error-summary component is published"
     }
   ],
   "staticView": {
