@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedBy": "_base/generate-index.mjs",
   "algorithm": "sha256 of whitespace-normalized body markup; script elements (metadata + behavior) excluded",
-  "count": 25,
+  "count": 27,
   "tiles": {
     "alert/danger.html": "fae86d3f013ada698adb64acbbef1a2cdbea823b969b666c8c474867a573eb3a",
     "alert/info.html": "1e03845e57dde46604cd9e3000da78a71da812b79c52869724b00b7ccae54721",
@@ -14,6 +14,8 @@
     "button/disabled.html": "22fe22e7c88c5427d8e73c3b649c2cb01dea34413109211dfdcde723ae249f52",
     "button/link.html": "b74dab525faac9243f28d825747b24cfe7cca4672fe05c5758cbd06b328236a4",
     "button/primary.html": "0498b2ba4a0c2ee2da2ba7eb4dfd51d9e9490621fcac5d5b79c4d4480e7c7d85",
+    "card/doormat.html": "cec0de9f8d2a25a70c7fefea3cd01571d01291a6f2635e91e531ad4c442839e6",
+    "card/feature.html": "7749d5e15fcdb5692fe484c946115e342010453722b606b8455975f8e0355431",
     "checkbox/default.html": "f613b7b2b042c955a39f01049231270afe3bbadb7cdcbaf42a443c7adb9311b0",
     "date-modified/default.html": "14c7c4dbf0868f54a13a360aa9628fc9883e2b8cfb5b72ec15d844daf0ba7aae",
     "details/default.html": "a605b32d8fd0bd13a80ea4510130add2b71dfeb73b09ed181a7a31f6e5d5ea24",

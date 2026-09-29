@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
-  "total": 25,
+  "total": 27,
   "designSystem": "Canada.ca Design System (GCWeb) 5.x",
   "facets": {
     "canadaComponentType": {
@@ -10,6 +10,7 @@
       "back-link": 1,
       "breadcrumb": 1,
       "button": 4,
+      "card": 2,
       "checkbox": 1,
       "date-modified": 1,
       "details": 1,
@@ -29,6 +30,7 @@
       "feedback": 5,
       "navigation": 7,
       "forms": 10,
+      "content": 2,
       "data-display": 3
     },
     "variant": {
@@ -40,33 +42,36 @@
       "disabled": 1,
       "link": 1,
       "primary": 1,
+      "doormat": 1,
+      "feature": 1,
       "striped": 1
     },
     "requiresJs": {
-      "no": 23,
+      "no": 25,
       "optional": 2
     },
     "interaction": {
-      "focus": 21,
-      "click": 15,
+      "focus": 23,
+      "click": 17,
       "keyboard": 7,
+      "hover": 2,
       "type": 3,
       "change": 1
     },
     "a11y": {
-      "wcag21AA": 25,
-      "keyboardNav": 22,
+      "wcag21AA": 27,
+      "keyboardNav": 24,
       "screenReader": 25,
       "reducedMotion": 25,
       "forcedColors": 25,
       "ariaAttributes": 25
     },
     "govCompliance": {
-      "Standard on Web Accessibility": 25,
+      "Standard on Web Accessibility": 27,
       "WCAG 2.1 AA": 25
     },
     "costTier": {
-      "cheap": 23,
+      "cheap": 25,
       "moderate": 2
     },
     "compositionRecipes": {
@@ -77,20 +82,23 @@
       "search-results": 4
     },
     "languages": {
-      "en": 25,
-      "fr": 25
+      "en": 27,
+      "fr": 27
     },
     "piiHandling": {
-      "displays_only": 14,
+      "displays_only": 16,
       "none": 5,
       "accepts_input": 6
     },
     "touchTargetSize": {
-      "44px": 22,
+      "44px": 24,
       "n/a": 3
     },
     "supportedTokenProfiles": {
       "highContrast": 25
+    },
+    "origin": {
+      "live-site": 3
     }
   }
 }

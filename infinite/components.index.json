@@ -3,11 +3,12 @@
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
   "counts": {
-    "total": 25,
+    "total": 27,
     "bySection": {
       "feedback": 5,
       "navigation": 7,
       "forms": 10,
+      "content": 2,
       "data-display": 3
     }
   },
@@ -585,6 +586,100 @@
       "resolvedView": "button/primary.resolved.html"
     },
     {
+      "file": "card/doormat.html",
+      "title": "Card (Doormat)",
+      "_schemaVersion": 2,
+      "description": "Doormat card grid: linked service tiles with short descriptions, as rendered in the canada.ca 'Services and information' section.",
+      "canadaComponentType": "card",
+      "canadaClass": "gc-srvinfo",
+      "section": "content",
+      "variant": "doormat",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "hover"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "doormat",
+        "promo",
+        "grid",
+        "services",
+        "landing"
+      ],
+      "origin": "live-site",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "relatedComponents": [
+        "header",
+        "breadcrumb",
+        "footer"
+      ],
+      "costTier": "cheap",
+      "resolvedView": "card/doormat.resolved.html"
+    },
+    {
+      "file": "card/feature.html",
+      "title": "Card (Feature)",
+      "_schemaVersion": 2,
+      "description": "Feature promo card: image, heading link stretched across the card, and description, as rendered in the canada.ca 'Features' section.",
+      "canadaComponentType": "card",
+      "canadaClass": "gc-features",
+      "section": "content",
+      "variant": "feature",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "hover"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true
+      },
+      "govCompliance": [
+        "Standard on Web Accessibility"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "promo",
+        "feature",
+        "stretched-link",
+        "image"
+      ],
+      "origin": "live-site",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "relatedComponents": [
+        "header",
+        "footer"
+      ],
+      "costTier": "cheap",
+      "resolvedView": "card/feature.resolved.html"
+    },
+    {
       "file": "checkbox/default.html",
       "title": "Checkbox (default)",
       "_schemaVersion": 2,
@@ -836,6 +931,7 @@
         "en",
         "fr"
       ],
+      "origin": "live-site",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],

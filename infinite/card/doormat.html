@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Doormat card grid: linked service tiles as rendered on canada.ca.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Card (Doormat)</title>
+  <script type="application/json" id="canada-agent-meta">
+  {
+    "file": "card/doormat.html",
+    "title": "Card (Doormat)",
+    "_schemaVersion": 2,
+    "discovery": {
+      "description": "Doormat card grid: linked service tiles with short descriptions, as rendered in the canada.ca 'Services and information' section.",
+      "canadaComponentType": "card",
+      "canadaClass": "gc-srvinfo",
+      "section": "content",
+      "variant": "doormat",
+      "requiresJs": "no",
+      "interaction": ["click", "focus", "hover"],
+      "a11y": { "wcag21AA": true, "keyboardNav": true },
+      "govCompliance": ["Standard on Web Accessibility"],
+      "tier": "curated",
+      "tags": ["card", "doormat", "promo", "grid", "services", "landing"],
+      "origin": "live-site",
+      "languages": ["en", "fr"],
+      "compliance": { "nistControls": [], "standardWebAccessibility": true, "wcag21AA": true, "webAccessibilityDirective": true, "piiHandling": "displays_only", "auditTrailCompatible": false, "dataMaskingCompatible": false },
+      "mobileUX": { "touchTargetSize": "44px", "requiredMinSpacing": "8px", "orientationLocked": false, "fullscreenSafe": true }
+    },
+    "selection": {
+      "useWhen": [
+        "a landing or topic page needs a grid of linked top tasks",
+        "each entry needs a heading link plus a one-line description"
+      ],
+      "avoidWhen": [
+        "long-form content — use prose or a table instead",
+        "the design system documents a card component with different doctrine"
+      ],
+      "guidance": [
+        { "guidance": true, "description": "Keep each card to one heading link and one short description, as observed on canada.ca" },
+        { "guidance": false, "description": "Do not nest buttons or complex controls inside a doormat card" }
+      ]
+    },
+    "instruction": {
+      "agentPrompt": "Adapt the card headings, links, and descriptions to the page's services. The grid wrapper (gc-srvinfo + wb-eqht row) and the column classes come from the observed canada.ca structure.",
+      "relatedComponents": ["header", "breadcrumb", "footer"]
+    },
+    "coordination": {
+      "compositionCost": { "costTier": "cheap", "estimatedTokens": 1800, "renderingTimeMs": 5, "recommendedModel": "haiku" },
+      "agentPromptSequence": [
+        "1. Place the gc-srvinfo section inside the main content container",
+        "2. Fill the wb-eqht row with doormat cards (col-lg-4 col-md-6)",
+        "3. Optionally close with an 'All services' button as observed on canada.ca"
+      ]
+    },
+    "constraints": {
+      "preserve": [
+        "section.gc-srvinfo wrapper",
+        "wb-eqht row grid wrapper",
+        "col-lg-4 col-md-6 column classes on each card",
+        "h3 > a heading-link structure per card"
+      ],
+      "portableInvariants": [
+        "heading link is the card's single interactive element",
+        "grid semantics (list of equal-height entries)"
+      ],
+      "editable": ["Card headings, link targets, and descriptions", "Number of cards"],
+      "limitations": [
+        "Observed variant: this structure comes from canada.ca's live implementation, not from documented design-system doctrine (discovery.origin: live-site)",
+        "The visual styling here is an approximation of GCWeb's theme CSS"
+      ]
+    },
+    "provenance": {
+      "observed": "2026-09-29",
+      "method": "live-site observation",
+      "source": "https://www.canada.ca/en.html (home page — 'Services and information' gc-srvinfo section)"
+    }
+  }
+  </script>
+  <style>
+    body{font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#333;padding:2rem;background:#fff;margin:0}
+    .cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}
+    a{color:#284162}
+    .gc-srvinfo .wb-inv{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+    .gc-srvinfo .row{display:flex;flex-wrap:wrap;margin:0 -15px}
+    .gc-srvinfo .row>div{padding:0 15px 20px}
+    .col-md-6{width:50%}
+    @media(min-width:992px){.col-lg-4{width:33.333%}.col-md-6{width:33.333%}}
+    .gc-srvinfo h3{margin:0 0 8px;font-size:1em}
+    .gc-srvinfo h3 a{display:block;padding:10px 12px;background:#eaebed;border-left:4px solid #16446c;color:#284162;font-weight:700;text-decoration:none}
+    .gc-srvinfo h3 a:hover{background:#fff;text-decoration:underline}
+    .gc-srvinfo p{margin:0;font-size:.9em;color:#333}
+  </style>
+</head>
+<body>
+  <section class="gc-srvinfo">
+    <div class="container">
+      <h2 class="wb-inv">Services and information</h2>
+      <div class="wb-eqht row">
+        <div class="col-lg-4 col-md-6">
+          <h3><a href="#">Jobs</a></h3>
+          <p>Find a job, training, hiring programs, work permits, Social Insurance Number (SIN)</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3><a href="#">Immigration and citizenship</a></h3>
+          <p>Visit, work, study, immigrate, refugees, permanent residents, apply, check status</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3><a href="#">Travel and tourism</a></h3>
+          <p>In Canada or abroad, advice, advisories, passports, visit Canada, events, attractions</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3><a href="#">Benefits</a></h3>
+          <p>EI, family and sickness leave, pensions, housing, student aid, disabilities</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="cap">card doormat</div>
+</body>
+</html>
