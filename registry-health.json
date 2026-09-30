@@ -76,6 +76,7 @@
   "findings": {
     "count": 3,
     "lastDeepCheck": "2026-09-29",
+    "openItems": [],
     "byResult": {
       "broke": 1,
       "recorded": 2
