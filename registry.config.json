@@ -13,7 +13,13 @@
     "name": "Canada.ca (WET-BOEW + GC Design System)",
     "version": "19.6.0",
     "url": "https://wet-boew.github.io/wet-boew/",
-    "notes": "WET-BOEW v19.6.0 (2026-08-18) is the verifiable ground truth: canada.ca serves /etc/designs/canada/wet-boew/css/theme.min.css, whose header declares the version. The page also loads GC Design System web components from the alpha CDN (@cdssnc/gcds-components@0.36.0; npm latest 0.47.0) — GCDS styles live inside shadow DOM and cannot be verified against a global stylesheet. Tiles are canada.ca site-implementation components (WET wb-* + Bootstrap + canada-specific gc-*/wb-* classes), not GCDS web components."
+    "notes": "Ground truth: WET-BOEW v19.6.0 (2026-08-18), the toolkit canada.ca serves. WET-BOEW ships no npm package, so the served stylesheet is vendored verbatim at infinite/ground-truth/wet-boew-19.6.0.css (its own header declares the version) and declared to staticView.classCheck. groundTruth is live-site, not installed-package: this is a snapshot mechanism, not a CI-installable one. canada.ca also loads GC Design System web components (@cdssnc/gcds-components) from an alpha CDN; GCDS styles live in shadow DOM and are not a verification target for these tiles.",
+    "verification": {
+      "markup": "live-html",
+      "styling": "live-css",
+      "packagePath": "infinite/ground-truth",
+      "groundTruth": "live-site"
+    }
   },
   "agentMetaId": "canada-agent-meta",
   "tileDir": "infinite",
@@ -102,12 +108,63 @@
     }
   ],
   "staticView": {
-    "css": [],
+    "css": [
+      "infinite/ground-truth/wet-boew-19.6.0.css"
+    ],
     "viewport": {
       "width": 1280,
       "height": 4000
     },
-    "note": "Resolved-view generation input (see _base/generate-resolved-view.mjs). Tiles are self-contained; no design-system CSS injection needed."
+    "note": "Resolved views render tiles self-contained; the ground-truth stylesheet is used only by the class check.",
+    "classCheck": {
+      "prefix": [
+        "wb-",
+        "btn-",
+        "btn",
+        "form-",
+        "form",
+        "gc-",
+        "alert-",
+        "table-",
+        "hidden-xs",
+        "visible-xs",
+        "col-",
+        "row",
+        "container",
+        "well",
+        "list-inline",
+        "label-",
+        "icon-",
+        "input-group-",
+        "checkbox-",
+        "radio-",
+        "lg-",
+        "md-",
+        "sm-",
+        "xl-",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "lead",
+        "text-",
+        "datepicker-",
+        "pagination-",
+        "pager-",
+        "wb"
+      ],
+      "allowlist": [
+        {
+          "class": "wb-eqht",
+          "reason": "Site layer: used 14x on the canada.ca home page (2026-09-29) but NOT defined in WET-BOEW 19.6.0 or any stylesheet that page loads — a dead legacy class. Kept because the live markup uses it; WET-BOEW defines wb-eqht-grd."
+        },
+        {
+          "class": "gc-search",
+          "reason": "Site layer: a canada.ca-specific class (1 use on the home page), not part of WET-BOEW. Declared in core-classes.json as a site component."
+        }
+      ]
+    }
   },
   "modifierSeparators": [
     "--",

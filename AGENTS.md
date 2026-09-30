@@ -74,3 +74,23 @@ Registry mandates that act as gates:
 2. `constraints.limitations` — respect
 3. `instruction.agentPrompt` — adapt within boundaries
 4. `constraints.editable` — prefer
+
+## Version Sync
+
+This registry mirrors **WET-BOEW v19.6.0** (2026-08-18) — the toolkit
+canada.ca actually serves. The version is declared in the served stylesheet's
+own header, which is vendored verbatim at
+`infinite/ground-truth/wet-boew-19.6.0.css` and declared to `staticView.css`
+and `staticView.classCheck`.
+
+WET-BOEW ships no npm package, so `groundTruth` is `live-site`: this is a
+**snapshot mechanism, not a CI-installable one**. When the site moves, refresh
+the vendored stylesheet and re-run the check.
+
+The class check spans 35 namespaces because the tiles mix WET (`wb-*`),
+Bootstrap (`btn-*`, `form-*`, `col-*`), and canada.ca-specific (`gc-*`) classes.
+The allowlist holds two documented site-layer entries (`wb-eqht`, a dead class
+the site still uses; `gc-search`, a canada.ca-specific component).
+
+canada.ca also loads GC Design System web components from an alpha CDN; GCDS
+styles live in shadow DOM and are **not** a verification target for these tiles.
