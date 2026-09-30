@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "registry": "canada-ai-components",
+  "note": "Canada.ca (GCWeb) registry epistemic record. See _base/findings-ledger.md. Backfilled from 2026-09-29/30 sessions; earlier evidence lives in the project workspace (workspace/docs/lessons-learned.md).",
+  "findings": [
+    {
+      "id": "F-001",
+      "date": "2026-09-29",
+      "kind": "deep-check",
+      "result": "broke",
+      "target": [
+        "header/default",
+        "footer/default",
+        "footnotes/default",
+        "registry.config.json"
+      ],
+      "changed": [
+        "registry: pin corrected from the unverifiable \"5.x\" to WET-BOEW 19.6.0",
+        "registry: stylesheet vendored verbatim at infinite/ground-truth/wet-boew-19.6.0.css and declared to staticView.css + classCheck",
+        "registry: classCheck spans 35 namespaces (wb-*, btn-*, form-*, col-*, gc-*, ...)",
+        "registry: 25/27 tiles verified and stamped"
+      ],
+      "evidence": [
+        "canada.ca/etc/designs/canada/wet-boew/css/theme.min.css — header declares v19.6.0 - 2026-08-18",
+        "live canada.ca in Chrome 2026-09-29: class=\"flag\" 0 occurrences, class=\"footer\" 0 occurrences",
+        "cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@0.36.0 loaded by the live page (revealed by the browser, not by fetches)"
+      ],
+      "summary": "The pin named a system that could not be checked, and three tiles carried classes present in neither the pinned stylesheet nor the live site.",
+      "detail": "The footnotes tile came from a WET-BOEW demo page and used its scaffolding classes (wb-fnotes, footnotes, example-body), which match neither current WET nor canada.ca; the current component is aside.wb-fnote with fn-lnk/fn-rtn, all verified canon. WET-BOEW ships no npm package, so groundTruth is live-site: a snapshot mechanism, not a CI-installable one, and the stylesheet is vendored so the check is still reproducible."
+    },
+    {
+      "id": "F-002",
+      "date": "2026-09-29",
+      "kind": "observation",
+      "result": "recorded",
+      "target": [
+        "card/doormat",
+        "card/feature",
+        "header",
+        "footer"
+      ],
+      "changed": [
+        "tile: card/doormat and card/feature added from the live home page (origin: live-site)",
+        "registry: gaps — doormat entry removed (now tiled); menu deferral recorded with a doctrine citation",
+        "registry: 4 observations recorded"
+      ],
+      "evidence": [
+        "https://www.canada.ca/en.html — gc-srvinfo grid and gc-features stretched-link cards",
+        "canada.ca menu is gcweb-menu, an AJAX-loaded hierarchical panel (observed)",
+        "https://design-system.canada.ca/en/components/theme-and-topic-menu/"
+      ],
+      "summary": "The doormat promo-card family — the top tile candidate since the first round-trip — is now two tiles, captured from the live site.",
+      "detail": "Also settled the long-standing \"5.x\" question: the page serves WET-BOEW 19.6.0 (from the stylesheet header) and separately loads GC Design System web components at 0.36.0 from an alpha CDN. GCDS styles live in shadow DOM and are not a verification target for these tiles."
+    },
+    {
+      "id": "F-003",
+      "date": "2026-09-29",
+      "kind": "observation",
+      "result": "recorded",
+      "target": [
+        "card/doormat",
+        "header/default"
+      ],
+      "changed": [
+        "registry: two site-layer classes documented in the classCheck register"
+      ],
+      "evidence": [
+        "wb-eqht — 14 uses on the canada.ca home page, defined in no loaded stylesheet (a dead legacy class; WET ships wb-eqht-grd)",
+        "gc-search — a canada.ca-specific class, declared in core-classes.json"
+      ],
+      "summary": "Two classes are real on the site but not part of WET-BOEW.",
+      "detail": "card/doormat is consequently left unstamped: its faithful markup depends on a class the toolkit does not define. The alternative (wb-eqht-grd) is noted in the tile, but the tile keeps what the live site actually uses, because a registry that mirrors canada.ca should mirror canada.ca."
+    }
+  ]
+}

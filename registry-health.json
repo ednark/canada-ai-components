@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "registry": "canada-ai-components",
+  "description": "Machine-readable trust surface: what this registry claims, and how far that claim has been checked. A registry with drift or unstamped tiles is telling you where not to trust it.",
+  "designSystem": {
+    "name": "Canada.ca (WET-BOEW + GC Design System)",
+    "pin": "19.6.0",
+    "package": null,
+    "groundTruth": "live-site",
+    "verification": {
+      "markup": "live-html",
+      "styling": "live-css"
+    }
+  },
+  "classCheck": {
+    "enabled": true,
+    "prefixes": [
+      "wb-",
+      "btn-",
+      "btn",
+      "form-",
+      "form",
+      "gc-",
+      "alert-",
+      "table-",
+      "hidden-xs",
+      "visible-xs",
+      "col-",
+      "row",
+      "container",
+      "well",
+      "list-inline",
+      "label-",
+      "icon-",
+      "input-group-",
+      "checkbox-",
+      "radio-",
+      "lg-",
+      "md-",
+      "sm-",
+      "xl-",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "lead",
+      "text-",
+      "datepicker-",
+      "pagination-",
+      "pager-",
+      "wb"
+    ],
+    "allowlistSize": 2,
+    "categories": {
+      "canonicalUnstyled": 0,
+      "appLayer": 0,
+      "siteLayer": 2,
+      "extension": 0,
+      "drift": 0,
+      "compat": 0,
+      "registryInternal": 0,
+      "unclassified": 0
+    }
+  },
+  "stamps": {
+    "verified": 25,
+    "total": 27,
+    "percent": 93
+  },
+  "tiles": 27,
+  "families": 19,
+  "coreClasses": 26,
+  "observations": 4,
+  "convergenceWatchlist": 0,
+  "findings": {
+    "count": 3,
+    "lastDeepCheck": "2026-09-29",
+    "byResult": {
+      "broke": 1,
+      "recorded": 2
+    }
+  },
+  "conformance": "pass",
+  "generatedBy": "_base/generate-health.mjs",
+  "generatedAt": "2026-09-30"
+}

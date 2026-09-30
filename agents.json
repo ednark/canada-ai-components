@@ -68,5 +68,6 @@
     "en",
     "fr"
   ],
-  "appearance": "Every tile has a generated resolved view: fetch {tileDir}/{file with .html replaced by .resolved.html} for a computed-style standalone rendering (geometry + colors inline, validated at build time). Index records expose the path as the resolvedView field. Tiles carry their component CSS inline."
+  "appearance": "Every tile has a generated resolved view: fetch {tileDir}/{file with .html replaced by .resolved.html} for a computed-style standalone rendering (geometry + colors inline, validated at build time). Index records expose the path as the resolvedView field. Tiles carry their component CSS inline.",
+  "healthUrl": "https://raw.githubusercontent.com/ednark/canada-ai-components/main/registry-health.json"
 }
