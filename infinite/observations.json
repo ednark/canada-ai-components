@@ -9,7 +9,7 @@
       "kind": "composition",
       "extension": "most-requested section (wb-eqht list)",
       "note": "documented canada.ca design pattern (Most requested) observed on cra + canada.ca — 2 sites; no most-requested pattern in the registry — pattern/recipe candidate",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -18,7 +18,7 @@
       "kind": "extension",
       "extension": "wb-rprt-prblm (report-a-problem widget + form/toggle/thank-you states)",
       "note": "wet-boew feedback widget, site-local",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -28,7 +28,7 @@
       "kind": "composition",
       "extension": "gc-featured-link (stretched-link feature banner)",
       "note": "feature banner composition above the doormat grid",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -37,7 +37,7 @@
       "kind": "composition",
       "extension": "gcweb-menu (AJAX-loaded hierarchical menu)",
       "note": "the theme-and-topic menu implementation — already a doctrine-cited deferral; observed again in the crawl",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     }
   ]
 }
